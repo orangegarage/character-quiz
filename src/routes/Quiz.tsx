@@ -9,14 +9,15 @@ import quizJson from '../data/quiz.json'
 
 
 
-class Quiz extends React.Component<{}, {currentQuestion: number}>
+class Quiz extends React.Component<{}, {currentQuestion: number, quizLength: number}>
 {
   constructor(props: any)
   {
     super(props);
     this.state = 
     {
-      currentQuestion: 0
+      currentQuestion: 0,
+      quizLength: quizJson.questions.length
     };
     this.nextQuestion = this.nextQuestion.bind(this);
     this.previousQuestion = this.previousQuestion.bind(this);
@@ -25,18 +26,25 @@ class Quiz extends React.Component<{}, {currentQuestion: number}>
   nextQuestion(): number
   {
     console.log("nextQuestion");
-    this.setState((state, props) => ({
-      currentQuestion: state.currentQuestion + 1
-    }));
+    if(this.state.quizLength > this.state.currentQuestion + 1)
+    {
+      this.setState((state, props) => ({
+        currentQuestion: state.currentQuestion + 1
+      }));
+    }
+
     console.log("currentQuestion" + this.state.currentQuestion);
     return this.state.currentQuestion;
   }
   previousQuestion(): number
   {
     console.log("previousQuestion");
-    this.setState((state, props) => ({
-      currentQuestion: state.currentQuestion - 1
-    }));
+    if(this.state.currentQuestion > 0)
+    {
+      this.setState((state, props) => ({
+        currentQuestion: state.currentQuestion - 1
+      }));
+    }
     console.log("currentQuestion" + this.state.currentQuestion);
     return this.state.currentQuestion;
   }
@@ -44,7 +52,7 @@ class Quiz extends React.Component<{}, {currentQuestion: number}>
   render()
   {
     console.log("hello world");
-    console.log("Quiz" + this.state.currentQuestion);
+    console.log("Quiz size: " + this.state.quizLength);
     let answers: Array<string> = quizJson.questions[this.state.currentQuestion].answers;
     let listAnswers = answers.map((answer) =>
       <li key={answer}>{answer}</li>
