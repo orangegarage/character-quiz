@@ -20,11 +20,13 @@ function AllCharacters() {
 
   return (
     <div>
-      <div className = "characters">
-       <ul className="characterList">{characterList}</ul>
+      <div className="characters">
+        <ul className="characterList">{characterList}</ul>
       </div>
-      <div className = "characterInfo">
-        <p>{characters[0].name}: {characters[0].traits}</p>
+      <div className="characterInfo">
+        <p>
+          {characters[0].name}: {characters[0].traits}
+        </p>
       </div>
     </div>
   );
