@@ -12,7 +12,6 @@ function Quiz() {
       setCurrentQuestion(currentQuestion + 1);
     } else {
       console.log("enter else");
-
       navigate("/Results");
     }
     console.log("currentQuestion" + currentQuestion);
