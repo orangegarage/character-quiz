@@ -1,10 +1,9 @@
-import React from 'react';
-import windowsLogo from './windowslogo.svg';
-import { Outlet, Link } from 'react-router-dom';
-import './App.css';
+import React from "react";
+import windowsLogo from "./windowslogo.svg";
+import { Outlet, Link } from "react-router-dom";
+import "./App.css";
 
-function App()
-{
+function App() {
   return (
     <div className="App">
       <header className="App-header">
@@ -21,7 +20,7 @@ function App()
           Learn React
         </a>
       </header>
-      <Outlet/>
+      <Outlet />
     </div>
   );
 }

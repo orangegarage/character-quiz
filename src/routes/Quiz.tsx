@@ -1,36 +1,25 @@
-import React, { useState, useEffect } from 'react';
-import quizJson from '../data/quiz.json'
-import { useNavigate } from 'react-router-dom';
-import Results from './Results';
+import React, { useState, useEffect } from "react";
+import { questions } from "../data/quiz";
+import { NavigateFunction, useNavigate } from "react-router-dom";
 
-//save current question number in something
-//if function clicked increment
-//if backwards clicked decrement
-//make sure it is not negative
-function Quiz()
-{
+function Quiz() {
+  let navigate = useNavigate();
   let [currentQuestion, setCurrentQuestion] = useState(0);
-  const quizLength = quizJson.questions.length;
+  const quizLength = questions.length;
 
-  function nextQuestion(): number
-  {
-    if(quizLength > currentQuestion + 1)
-    {
+  function nextQuestion(): number {
+    if (quizLength > currentQuestion + 1) {
       setCurrentQuestion(currentQuestion + 1);
-    }
-    else
-    {
+    } else {
       console.log("enter else");
-      let navigate = useNavigate();
-      navigate('/Results');
+
+      navigate("/Results");
     }
     console.log("currentQuestion" + currentQuestion);
     return currentQuestion;
   }
-  function previousQuestion(): number
-  {
-    if(currentQuestion > 0)
-    {
+  function previousQuestion(): number {
+    if (currentQuestion > 0) {
       setCurrentQuestion(currentQuestion - 1);
     }
     console.log("currentQuestion" + currentQuestion);
@@ -38,27 +27,21 @@ function Quiz()
   }
 
   console.log("Quiz size: " + quizLength);
-  let answers: Array<string> = quizJson.questions[currentQuestion].answers;
-  let listAnswers = answers.map((answer) =>
-    <li key={answer}>{answer}</li>
-  );
+  let answers: Array<string> = questions[currentQuestion].answers;
+  let listAnswers = answers.map((answer) => <li key={answer}>{answer}</li>);
 
   return (
-      <div>
-        <div className="quizDiv">
-          <p>
-            {quizJson.questions[currentQuestion].question}
-          </p>
-          <ul>
-            {listAnswers}
-          </ul>
-        </div>
-        <div className="navButtonDiv">
-            <button onClick={previousQuestion}>Previous</button>
-            <button onClick={nextQuestion}>Next</button>
-            <p>{currentQuestion}</p>
-        </div>
+    <div>
+      <div className="quizDiv">
+        <p>{questions[currentQuestion].question}</p>
+        <ul>{listAnswers}</ul>
       </div>
+      <div className="navButtonDiv">
+        <button onClick={previousQuestion}>&lt;Previous</button>
+        <button onClick={nextQuestion}>Next&gt;</button>
+        <p>{currentQuestion}</p>
+      </div>
+    </div>
   );
 }
 export default Quiz;
