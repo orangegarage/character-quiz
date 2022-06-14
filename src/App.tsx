@@ -1,6 +1,6 @@
 import React from "react";
 import windowsLogo from "./windowslogo.svg";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import "./App.css";
 
 function App() {

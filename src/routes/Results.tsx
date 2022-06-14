@@ -1,6 +1,4 @@
 import React from "react";
-import windowsLogo from "./windowslogo.svg";
-import { Outlet, Link } from "react-router-dom";
 
 function Results() {
   console.log("hello results world");

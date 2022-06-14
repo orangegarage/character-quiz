@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { characters } from "../data/characters";
 
 function AllCharacters() {
@@ -12,7 +12,7 @@ function AllCharacters() {
       // when calling function with parenthesis it actually calls the function
       // to avoid anonymous function...?
       <li key={character.name} onClick={() => characterClick(character.name)}>
-        <img src={character.image} />
+        <img src={character.image} alt={character.name} />
         {character.name}
       </li>
     );
