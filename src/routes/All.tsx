@@ -19,8 +19,8 @@ function AllCharacters() {
     return (
       // when calling function with parenthesis it actually calls the function
       // to avoid anonymous function...?
-      <li key={character.name} onClick={() => characterClick(character.name)}>
-        <img src={character.image} alt={character.name} />
+      <li key={character.name} onClick={() => characterClick(character.name)} className="mt-6 mx-6 text-[#61dafb] flex-row ">
+        <img src={character.image} alt={character.name}/>
         {character.name}
       </li>
     );
@@ -104,7 +104,7 @@ function AllCharacters() {
   return (
     <div>
       <div className="characters">
-        <ul className="characterList flex flex-wrap">{characterList}</ul>
+        <ul className="mt-20 characterList flex flex-wrap justify-center">{characterList}</ul>
       </div>
       <div className="characterCard" onClick={toggleVisibility}>
         {selectedCharacter(index)}

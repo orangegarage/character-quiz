@@ -31,14 +31,14 @@ function Quiz() {
 
   return (
     <div>
-      <div className="quizDiv">
+      <div className="quizDiv text-[#61dafb]">
+        <p>{currentQuestion} out of {questions.length}</p>
         <p>{questions[currentQuestion].question}</p>
         <ul>{listAnswers}</ul>
       </div>
-      <div className="navButtonDiv">
+      <div className="navButtonDiv text-white">
         <button onClick={previousQuestion}>&lt;Previous</button>
         <button onClick={nextQuestion}>Next&gt;</button>
-        <p>{currentQuestion}</p>
       </div>
     </div>
   );
