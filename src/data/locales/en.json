@@ -1,0 +1,27 @@
+{
+  "questions":
+  {
+    "q1-question": "Do you prefer a male or female character?",
+    "q2-question": "Are you willing to invest money and/or time in the character? (Subjective)",
+    "q3-question": "What would you think you'd enjoy the most?",
+    "q4-question": "How would you feel about having to target specifically the head/back for max damage?",
+    "q5-question": "",
+    "q6-question": "",
+    "q7-question": "",
+    "q8-question": "",
+    "q9-question": "",
+    "q10-question": ""
+  },
+  "answers":
+  {
+    "general-neutral": "No preference / Skip this question",
+    "male-prioritize": "Strongly prefer male characters",
+    "male-prefer": "Prefer male characters",
+    "female-prioritize": "Strongly prefer female characters",
+    "female-prefer": "Prefer female characters",
+    "costly-prioritize": "Strongly prefer a character that needs heavy investment",
+    "costly-prefer": "Prefer heavy investment, but it's ok if it doesn't",
+    "frugal-prioritize": "Strongly prefer characters that do not need much investment",
+    "frugal-prefer": "Prefer less investment, but don't mind spending a little"
+  }
+}

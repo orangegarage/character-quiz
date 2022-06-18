@@ -8,6 +8,7 @@ import Results from "./routes/Results";
 import All from "./routes/All";
 import reportWebVitals from "./reportWebVitals";
 import jinLogo from "./jinhub.webp";
+import './i18n';
 
 const navElement = (
   <div className = "bg-[#0583D2] flex items-center">
