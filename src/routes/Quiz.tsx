@@ -32,7 +32,10 @@ function Quiz() {
   console.log("Quiz size: " + quizLength);
   let answers: Array<string> = questions[currentQuestion].answers;
   let listAnswers = answers.map((answer) => (
-    <li key={answer} className="text-center p-2 bg-[#055e96] border-[#055e96] rounded-lg hover:bg-[#BBA14F] mb-2">
+    <li
+      key={answer}
+      className="text-center p-2 bg-[#055e96] border-[#055e96] rounded-lg hover:bg-[#BBA14F] transition-colors duration-300 mb-2"
+    >
       {t("answers." + answer)}
     </li>
   ));
@@ -49,7 +52,7 @@ function Quiz() {
           </p>
         </div>
       </div>
-      <div className="quizNavDiv md:w-1/2 mx-auto flex items-center justify-center">
+      <div className="quizNavDiv lg:w-1/2 w-full mx-auto flex items-center justify-center">
         <div className="navButtonDiv text-white lg:mx-10 md:mx-10 mr-3">
           <button onClick={previousQuestion}>
             <svg
@@ -70,7 +73,7 @@ function Quiz() {
         </div>
         <div className="answerDiv w-full text-2xl flex justify-center text-white ">
           {/* may need to take justify-center out for this one for legibility in start and end of questions */}
-          <ul className= "w-full">{listAnswers}</ul>
+          <ul className="w-full">{listAnswers}</ul>
         </div>
         <div className="navButtonDiv text-whitelg:mx-10 md:mx-10 mr-3">
           <button onClick={nextQuestion}>
