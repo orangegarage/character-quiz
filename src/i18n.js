@@ -2,7 +2,7 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
 import translationEN from './data/locales/en.json';
-import translationKR from './data/locales/en.json';
+import translationKR from './data/locales/kr.json';
 import Backend from 'i18next-http-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
@@ -10,7 +10,7 @@ const resources = {
     en: {
         translation: translationEN
     },
-    kr: {
+    ko: {
          translation: translationKR
     }
 };

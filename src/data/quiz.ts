@@ -12,7 +12,7 @@ export let questions = [
   {
     number: 3,
     question: "q3-question",
-    answers: ["damage-prioritize", "tank-prioritize", "support-prioritize","general-neutral"],
+    answers: ["damage-prioritize", "tank-prioritize", "support-only","general-neutral"],
   },
   {
     number: 4,
@@ -37,26 +37,26 @@ export let questions = [
   {
     number: 8,
     question: "q8-question",
-    answers: ["q7-answer-prioritize", "q7-answer-prefer", "q7-answer-3", "q7-answer-4"],
+    answers: ["survivability-high-prioritize", "survivability-high-prefer", "survivability-midhigh-prioritize", "survivability-midhigh-prefer", "survivability-neutral"],
   },
   {
     number: 9,
     question: "q9-question",
-    answers: ["q8-answer-prioritize", "q8-answer-prefer", "q8-answer-3", "q8-answer-4"],
+    answers: ["mobility-high-prioritize", "mobility-midhigh-prioritize", "mobility-low-prioritize", "mobility-neutral"],
   },
   {
     number: 10,
     question: "q10-question",
-    answers: ["q9-answer-prioritize", "q9-answer-prefer", "q9-answer-3", "q9-answer-4"],
+    answers: ["tier-high-prioritize", "tier-mid-prioritize", "tier-low-prioritize", "tier-midhigh-prioritize", "tier-midlow-prioritize" ,"general-neutral"],
   },
   {
     number: 11,
     question: "q11-question",
-    answers: ["q10-answer-prioritize", "q10-answer-prefer", "q10-answer-3", "q10-answer-4"],
+    answers: ["difficulty-high-prioritize", "difficulty-low-prioritize", "difficulty-neutral"],
   },
     {
     number: 12,
     question: "q12-question",
-    answers: ["q11-answer-prioritize", "q11-answer-prefer", "q11-answer-3", "q11-answer-4"],
+    answers: ["global-only", "global-prioritize", "global-neutral"]
   }
 ];
