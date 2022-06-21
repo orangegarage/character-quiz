@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { questions } from "../data/quiz";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import "../Quiz.css";
 
 function Quiz() {
   const { t, i18n } = useTranslation();
@@ -38,7 +37,9 @@ function Quiz() {
       for (let i = 0; i < answers.length; i++) {
         let prevSelection = document.getElementById(answers[i]);
         prevSelection?.parentElement?.classList.remove("bg-[#e4bb40]");
+        prevSelection?.parentElement?.classList.add("bg-[#055e96]");
       }
+      answerElement.parentElement?.classList.remove("bg-[#055e96]");
       answerElement.parentElement?.classList.add("bg-[#e4bb40]");
     }
   }
@@ -48,7 +49,7 @@ function Quiz() {
     <label htmlFor={answer}>
       <li
         key={answer}
-        className="listAnswers text-center p-2 bg-[#055e96] border-[#055e96] rounded-lg hover:bg-[#BBA14F] transition-colors duration-300 mb-2 peer-checked:bg-[#bba14f]"
+        className="listAnswers text-center p-2 bg-[#055e96] border-[#055e96] rounded-lg hover:bg-[#BBA14F] transition-colors duration-300 mb-2"
       >
         <input
           type="radio"
