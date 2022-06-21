@@ -8,9 +8,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={windowsLogo} className="App-logo" alt="windowsLogo" />
-        <h1 className="text-3xl font-bold underline">
-          Hello world!
-        </h1>
+        <h1 className="text-3xl font-bold underline">Hello world!</h1>
         <p>
           What <code>Waller.exe</code> outputs
         </p>

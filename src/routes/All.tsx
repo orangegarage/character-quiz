@@ -19,8 +19,12 @@ function AllCharacters() {
     return (
       // when calling function with parenthesis it actually calls the function
       // to avoid anonymous function...?
-      <li key={character.name} onClick={() => characterClick(character.name)} className="mt-6 mx-6 text-[#61dafb] flex-row ">
-        <img src={character.image} alt={character.name}/>
+      <li
+        key={character.name}
+        onClick={() => characterClick(character.name)}
+        className="mt-6 mx-6 text-[#61dafb] flex-row "
+      >
+        <img src={character.image} alt={character.name} />
         {character.name}
       </li>
     );
@@ -77,7 +81,11 @@ function AllCharacters() {
                 >
                   Overview
                 </button>
-                <a href= "https://stackoverflow.com/questions/41080481/in-reactjs-how-to-invoke-link-click-via-button-press" target="_blank" rel="noreferrer">
+                <a
+                  href="https://stackoverflow.com/questions/41080481/in-reactjs-how-to-invoke-link-click-via-button-press"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <button
                     type="button"
                     className="text-white bg-blue-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm font-medium px-5 py-2.5"
@@ -88,9 +96,7 @@ function AllCharacters() {
               </div>
             </div>
           </div>
-          <p>
-            
-          </p>
+          <p></p>
         </div>
       );
     }
@@ -104,7 +110,9 @@ function AllCharacters() {
   return (
     <div>
       <div className="characters">
-        <ul className="mt-20 characterList flex flex-wrap justify-center">{characterList}</ul>
+        <ul className="mt-20 characterList flex flex-wrap justify-center">
+          {characterList}
+        </ul>
       </div>
       <div className="characterCard" onClick={toggleVisibility}>
         {selectedCharacter(index)}

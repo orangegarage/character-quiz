@@ -30,38 +30,36 @@ function Quiz() {
     return currentQuestion;
   }
 
-  function choseAnswer(answers:Array<string>, answer: string) {
+  function choseAnswer(answers: Array<string>, answer: string) {
     console.log("chose answer: " + answer);
     let answerElement = document.getElementById(answer);
     //handles color changing part of answer
-    if(answerElement != null) {
-      for(let i = 0; i < answers.length; i++) {
+    if (answerElement != null) {
+      for (let i = 0; i < answers.length; i++) {
         let prevSelection = document.getElementById(answers[i]);
-        prevSelection?.parentElement?.classList.remove('bg-[#e4bb40]');
-
+        prevSelection?.parentElement?.classList.remove("bg-[#e4bb40]");
       }
-      answerElement.parentElement?.classList.add('bg-[#e4bb40]');
+      answerElement.parentElement?.classList.add("bg-[#e4bb40]");
     }
-
   }
   console.log("Quiz size: " + quizLength);
   let answers: Array<string> = questions[currentQuestion].answers;
   let listAnswers = answers.map((answer) => (
     <label htmlFor={answer}>
-    <li
-      key={answer}
-      className="listAnswers text-center p-2 bg-[#055e96] border-[#055e96] rounded-lg hover:bg-[#BBA14F] transition-colors duration-300 mb-2 peer-checked:bg-[#bba14f]"
-    >
-      <input
-        type="radio"
-        className="radioAnswer"
-        name = "radioAnswer"
-        id={answer}
-        value={answer}
-        onChange={() => choseAnswer(answers, answer)}
-      />
+      <li
+        key={answer}
+        className="listAnswers text-center p-2 bg-[#055e96] border-[#055e96] rounded-lg hover:bg-[#BBA14F] transition-colors duration-300 mb-2 peer-checked:bg-[#bba14f]"
+      >
+        <input
+          type="radio"
+          className="radioAnswer"
+          name="radioAnswer"
+          id={answer}
+          value={answer}
+          onChange={() => choseAnswer(answers, answer)}
+        />
         {t("answers." + answer)}
-    </li>
+      </li>
     </label>
   ));
 

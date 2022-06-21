@@ -1,6 +1,5 @@
 {
-  "questions":
-  {
+  "questions": {
     "q1-question": "Do you prefer a male or female character? (Many classes are genderlocked in Lost Ark)",
     "q2-question": "Are you willing to invest heavy money and/or time in the class? (Subjective)",
     "q3-question": "What would you enjoy the most while playing the game?",
@@ -14,8 +13,7 @@
     "q11-question": "Do you have preference on class difficulty? (Difficulty is subjective)",
     "q12-question": "Last question: Are you ok with getting recommendations of classes only available in Korea for now?"
   },
-  "answers":
-  {
+  "answers": {
     "general-neutral": "No preference / Skip question",
     "male-only": "Only male classes",
     "male-prefer": "Prefer male classes",
@@ -44,7 +42,7 @@
     "cycle-allrounder-prefer": "Prefer a class that has a little bit of both",
     "range-midlong-prioritize": "Strongly prefer a class with mid-long range",
     "range-midlong-prefer": "Prefer a class with mid-long range",
-    "range-midshort-prioritize":"Strongly prefer a class with short-mid range",
+    "range-midshort-prioritize": "Strongly prefer a class with short-mid range",
     "range-midshort-prefer": "Prefer a class with mid-long range",
     "survivability-high-prioritize": "Strongly prefer a class with high survivability",
     "survivability-high-prefer": "Prefer a class with high survivability",

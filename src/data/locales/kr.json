@@ -1,6 +1,5 @@
 {
-  "questions":
-  {
+  "questions": {
     "q1-question": "선호하는 캐릭터 성별이 있나요? (로아의 많은 직업군은 성별이 정해져 있습니다)",
     "q2-question": "클래스에 많은 시간/돈을 투자할 생각이 있으신가요? (주관적)",
     "q3-question": "다음 중 제일 즐거울 것 같은 일은 무엇인가요?",
@@ -14,8 +13,7 @@
     "q11-question": "선호하시는 직업 난이도가 있나요? (난이도는 주관적입니다)",
     "q12-question": "마지막 질문입니다. 글로벌 서버이신 경우, 현재 한국에서만 플레이 가능한 직업 추천도 괜찮으신가요?"
   },
-  "answers":
-  {
+  "answers": {
     "general-neutral": "상관 없음 / 질문 건너뛰기",
     "male-only": "남캐를 우선으로 추천해 주세요",
     "male-prefer": "남캐가 좋지만, 필수는 아닙니다",
@@ -44,7 +42,7 @@
     "cycle-allrounder-prefer": "세팅에 따라 지속딜도, 누킹도 할 수 있는 올라운더 직업이 좋지만, 필수는 아닙니다",
     "range-midlong-prioritize": "중장거리에서 스킬을 쓰는 직업을 우선해주세요",
     "range-midlong-prefer": "중장거리에서 스킬을 쓰는 직업을 선호하지만, 필수는 아닙니다",
-    "range-midshort-prioritize":"근중거리에서 스킬을 쓰는 직업을 우선해주세요",
+    "range-midshort-prioritize": "근중거리에서 스킬을 쓰는 직업을 우선해주세요",
     "range-midshort-prefer": "근중거리에서 스킬을 쓰는 직업을 선호하지만, 필수는 아닙니다.",
     "survivability-high-prioritize": "높은 생존력은 정말 중요한 요소라고 생각합니다",
     "survivability-high-prefer": "높은 생존력은 중요하지만 캐릭터의 생존력이 최우선 사항은 아닙니다",
