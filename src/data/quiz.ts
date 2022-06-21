@@ -2,7 +2,7 @@ export let questions = [
   {
     number: 1,
     question: "q1-question",
-    answers: ["male-only", "male-prefer", "female-only", "female-prefer" ,"general-neutral"],
+    answers: ["male-only", "male-prefer", "female-only", "female-prefer", "general-neutral"],
   },
   {
     number: 2,
@@ -12,7 +12,7 @@ export let questions = [
   {
     number: 3,
     question: "q3-question",
-    answers: ["damage-prioritize", "tank-prioritize", "support-only","general-neutral"],
+    answers: ["damage-prioritize", "tank-prioritize", "support-only", "general-neutral"],
   },
   {
     number: 4,
@@ -52,7 +52,7 @@ export let questions = [
   {
     number: 11,
     question: "q11-question",
-    answers: ["difficulty-high-prioritize", "difficulty-low-prioritize", "difficulty-neutral"],
+    answers: ["difficulty-high-prioritize", "difficulty-low-prioritize", "difficulty-midhigh-prioritize", "difficulty-midlow-prioritize", "difficulty-neutral"],
   },
     {
     number: 12,
