@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { questions } from "../data/quiz";
 import { useNavigate } from "react-router-dom";
+import { characters } from "../data/characters";
 import { useTranslation } from "react-i18next";
 
 export let preferencesArray = new Array<string>(questions.length);
@@ -14,11 +15,22 @@ function Quiz() {
   const quizLength = questions.length;
   let [preferences, setPreferences] = useState(preferencesArray);
 
+  function doCalculation() {
+    const prioritizedTraits =  preferencesArray.filter(trait => trait.includes("prioritize"));
+    const preferredTraits =  preferencesArray.filter(trait => trait.includes("prefer"));
+    const onlyTraits =  preferencesArray.filter(trait => trait.includes("only"));
+    let scoredCharacters = characters.map(character => {
+      const characterPrioritizedTraits = character.traits.filter(trait=>prioritizedTraits.includes(trait)).length;
+      const characterPreferredTraits = character.traits.filter(trait=>preferredTraits.includes(trait)).length;
+      const characterOnlyTraits = character.traits.filter(trait=>onlyTraits.includes(trait)).length;
+      return character;
+    });
+  }
   function nextQuestion(): number {
     if (quizLength > currentQuestion + 1) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
-      
+      doCalculation();
       navigate("/Results");
     }
     return currentQuestion;

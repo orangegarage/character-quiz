@@ -10,15 +10,13 @@ function App() {
         <img src={windowsLogo} className="App-logo" alt="windowsLogo" />
         <h1 className="text-3xl font-bold underline">Hello world!</h1>
         <p>
-          What <code>Waller.exe</code> outputs
+          This is just a recommendation
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/Quiz"
         >
-          Learn React
+          Take Quiz
         </a>
       </header>
       <Outlet />
