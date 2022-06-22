@@ -3,6 +3,8 @@ import { questions } from "../data/quiz";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
+export let preferencesArray = new Array<string>(questions.length);
+
 function Quiz() {
   const { t, i18n } = useTranslation();
   //we will use i18n function for language toggle later
@@ -10,15 +12,15 @@ function Quiz() {
   let navigate = useNavigate();
   let [currentQuestion, setCurrentQuestion] = useState(0);
   const quizLength = questions.length;
+  let [preferences, setPreferences] = useState(preferencesArray);
 
   function nextQuestion(): number {
     if (quizLength > currentQuestion + 1) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
-      console.log("enter else");
+      
       navigate("/Results");
     }
-    console.log("currentQuestion" + currentQuestion);
     return currentQuestion;
   }
   function previousQuestion(): number {
@@ -31,6 +33,12 @@ function Quiz() {
 
   function choseAnswer(answers: Array<string>, answer: string) {
     console.log("chose answer: " + answer);
+    if(answer != null) {
+      preferences[currentQuestion] = answer;
+      setPreferences(preferences);
+      console.log("Current preferences: " + preferences);
+      preferencesArray = preferences;
+    }
     let answerElement = document.getElementById(answer);
     //handles color changing part of answer
     if (answerElement != null) {
@@ -43,7 +51,6 @@ function Quiz() {
       answerElement.parentElement?.classList.add("bg-[#e4bb40]");
     }
   }
-  console.log("Quiz size: " + quizLength);
   let answers: Array<string> = questions[currentQuestion].answers;
   let listAnswers = answers.map((answer) => (
     <label htmlFor={answer}>
@@ -57,6 +64,7 @@ function Quiz() {
           name="radioAnswer"
           id={answer}
           value={answer}
+          hidden
           onChange={() => choseAnswer(answers, answer)}
         />
         {t("answers." + answer)}
@@ -121,4 +129,5 @@ function Quiz() {
     </div>
   );
 }
+
 export default Quiz;
