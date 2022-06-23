@@ -5,7 +5,7 @@ import { characters } from "../data/characters";
 import { useTranslation } from "react-i18next";
 
 export let preferencesArray = new Array<string>(questions.length);
-
+export let scoredCharacters = characters;
 function Quiz() {
   const { t, i18n } = useTranslation();
   //we will use i18n function for language toggle later
@@ -16,15 +16,21 @@ function Quiz() {
   let [preferences, setPreferences] = useState(preferencesArray);
 
   function doCalculation() {
-    const prioritizedTraits =  preferencesArray.filter(trait => trait.includes("prioritize"));
-    const preferredTraits =  preferencesArray.filter(trait => trait.includes("prefer"));
-    const onlyTraits =  preferencesArray.filter(trait => trait.includes("only"));
-    let scoredCharacters = characters.map(character => {
-      const characterPrioritizedTraits = character.traits.filter(trait=>prioritizedTraits.includes(trait)).length;
-      const characterPreferredTraits = character.traits.filter(trait=>preferredTraits.includes(trait)).length;
-      const characterOnlyTraits = character.traits.filter(trait=>onlyTraits.includes(trait)).length;
-      return character;
-    });
+    const prioritizedTraitsWithModifier =  preferencesArray.filter(trait => trait.includes("prioritize"));
+    const prioritizedTraits = prioritizedTraitsWithModifier.map(trait=>trait.replace("-prioritize", ""));
+    const preferredTraitsWithModifier =  preferencesArray.filter(trait => trait.includes("prefer"));
+    const preferredTraits = preferredTraitsWithModifier.map(trait=>trait.replace("-prefer", ""));
+    const onlyTraitsWithModifier =  preferencesArray.filter(trait => trait.includes("only"));
+    const onlyTraits = onlyTraitsWithModifier.map(trait=>trait.replace("-only", ""));
+    
+    for(let i = 0; i < characters.length; i ++) {
+      const characterPrioritizedTraits = characters[i].traits.filter(trait=>prioritizedTraits.includes(trait)).length;
+      const characterPreferredTraits = characters[i].traits.filter(trait=>preferredTraits.includes(trait)).length;
+      const characterOnlyTraits = characters[i].traits.filter(trait=>onlyTraits.includes(trait)).length;
+      characters[i].score = (characterOnlyTraits + 1) * (10 * (characterOnlyTraits + characterPreferredTraits) + 5 * characterPrioritizedTraits)
+      console.log(characters[i].name + ": " + characters[i].score);
+    }
+    scoredCharacters = characters;
   }
   function nextQuestion(): number {
     if (quizLength > currentQuestion + 1) {

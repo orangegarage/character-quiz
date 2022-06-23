@@ -1,20 +1,22 @@
 import React from "react";
 import { characters } from "../data/characters";
-import { preferencesArray } from './Quiz';
+import { preferencesArray, scoredCharacters } from './Quiz';
 
-let finalArray =  new Array<string>(characters.length);
 
 function Results() {
   // function computeScore()
 
   console.log("hello results world");
   console.log(preferencesArray);
+  console.log("current characters array: ")
+  const sortedCharacters = scoredCharacters.sort((a,b) => b.score - a.score);
+
 
   return (
     <div>
       <p>Hello World!</p>
       {preferencesArray}
-      <div>{finalArray}</div>
+      <div></div>
     </div>
   );
 }

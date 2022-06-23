@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { characters } from "../data/characters";
+import { scoredCharacters } from './Quiz';
 import "../App.css";
 
 function AllCharacters() {
@@ -15,7 +16,8 @@ function AllCharacters() {
     }
   }
 
-  let characterList = characters.map((character) => {
+  const sortedCharacters = scoredCharacters.sort((a,b) => b.score - a.score);
+  let characterList = sortedCharacters.map((character) => {
     return (
       // when calling function with parenthesis it actually calls the function
       // to avoid anonymous function...?
@@ -45,7 +47,7 @@ function AllCharacters() {
             <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
               <div className="flex justify-between items-start p-4 rounded-t border-b dark:border-gray-600">
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                  {characters[index].name}
+                  {sortedCharacters[index].name}
                 </h3>
                 <button
                   type="button"
@@ -68,10 +70,10 @@ function AllCharacters() {
 
               <div className="p-6 space-y-6">
                 <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                  {characters[index].traits}
+                  {sortedCharacters[index].traits}
                 </p>
                 <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                  {characters[index].flavortext}
+                  {sortedCharacters[index].flavortext}
                 </p>
               </div>
               <div className="flex items-center p-6 space-x-2 rounded-b border-t border-gray-200 dark:border-gray-600">

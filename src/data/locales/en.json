@@ -60,6 +60,8 @@
     "tier-midlow-prioritize": "Tier 3~5 - no higher tiers",
     "difficulty-high-prioritize": "Recommend me classes with challenging gameplay",
     "difficulty-low-prioritize": "Recommend me easier classes to start getting used to Lost Ark with",
+    "difficulty-midhigh-prioritize": "Recommend me a class that isn't too easy/simple",
+    "difficulty-midlow-prioritize": "Recommend me a class that isn't too challenging/complicated",
     "difficulty-neutral": "I don't have a strong preference on class difficulty / Skip question",
     "global-only": "Only recommend me classes currently available globally",
     "global-prioritize": "I would like an emphasis on classes currently available globally",
