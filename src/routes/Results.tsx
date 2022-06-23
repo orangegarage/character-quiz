@@ -14,10 +14,10 @@ function Results() {
     for (let i = 0; i < 3; i++) {
       top3[i] = (
         <li key={characterList[i].name} className="top3Characters mt-6 mx-6 flex-row text-[#61dafb]">
-          <div>
+          <div className= "flex justify-center">
             <img className = "top3Images flex justify-center" src={characterList[i].image} alt={characterList[i].name}/>
           </div>
-          {characterList[i].name}
+          {i+1}. {characterList[i].name}
         </li>
       );
     }

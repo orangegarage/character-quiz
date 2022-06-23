@@ -28,7 +28,6 @@ function AllCharacters() {
           <img src={character.image} alt={character.name} />
         </div>
         {character.name}
-
       </li>
     );
   });
