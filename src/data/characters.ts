@@ -5,7 +5,7 @@ export let characters = [
     name: "char1-name-sample",
     image: charA,
     traits: ["male", "trait-2", "trait-3", "trait-4"],
-    flavortext: "char1-flavortext",
+    flavortext: "char1-flavortext sample, male character has traits oo cool wow nice amazing lorem ipsum",
     score: 0
   },
   {

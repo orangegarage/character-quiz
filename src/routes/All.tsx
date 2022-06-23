@@ -19,15 +19,16 @@ function AllCharacters() {
   const sortedCharacters = scoredCharacters.sort((a,b) => b.score - a.score);
   let characterList = sortedCharacters.map((character) => {
     return (
-      // when calling function with parenthesis it actually calls the function
-      // to avoid anonymous function...?
       <li
         key={character.name}
         onClick={() => characterClick(character.name)}
-        className="mt-6 mx-6 text-[#61dafb] flex-row "
+        className="mt-6 mx-6 text-[#61dafb]"
       >
-        <img src={character.image} alt={character.name} />
+        <div className="flex justify-center">
+          <img src={character.image} alt={character.name} />
+        </div>
         {character.name}
+
       </li>
     );
   });
@@ -70,10 +71,10 @@ function AllCharacters() {
 
               <div className="p-6 space-y-6">
                 <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                  {sortedCharacters[index].traits}
+                  {sortedCharacters[index].flavortext}
                 </p>
                 <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                  {sortedCharacters[index].flavortext}
+                  {sortedCharacters[index].traits + " "}
                 </p>
               </div>
               <div className="flex items-center p-6 space-x-2 rounded-b border-t border-gray-200 dark:border-gray-600">
@@ -83,22 +84,15 @@ function AllCharacters() {
                 >
                   Overview
                 </button>
-                <a
-                  href="https://stackoverflow.com/questions/41080481/in-reactjs-how-to-invoke-link-click-via-button-press"
-                  target="_blank"
-                  rel="noreferrer"
+                <button
+                  type="button"
+                  className="text-white bg-blue-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm font-medium px-5 py-2.5"
                 >
-                  <button
-                    type="button"
-                    className="text-white bg-blue-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm font-medium px-5 py-2.5"
-                  >
-                    Build Guide
-                  </button>
-                </a>
+                  Build Guide
+                </button>
               </div>
             </div>
           </div>
-          <p></p>
         </div>
       );
     }
@@ -111,7 +105,7 @@ function AllCharacters() {
 
   return (
     <div>
-      <div className="characters">
+      <div className="characters m-auto">
         <ul className="mt-20 characterList flex flex-wrap justify-center">
           {characterList}
         </ul>
