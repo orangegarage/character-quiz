@@ -1,6 +1,6 @@
 import React from "react";
 // import { characters } from "../data/characters";
-import { preferencesArray, scoredCharacters } from './Quiz';
+import { preferencesArray } from './Quiz';
 
 
 function Results() {
