@@ -1,6 +1,5 @@
 import React from "react";
 import { preferencesArray, scoredCharacters } from "./Quiz";
-import { JsxElement } from "typescript";
 
 function Results() {
   // function computeScore()
