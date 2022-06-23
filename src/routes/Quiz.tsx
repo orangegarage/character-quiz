@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 export let preferencesArray = new Array<string>(questions.length);
 export let scoredCharacters = characters;
 function Quiz() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   //we will use i18n function for language toggle later
   //https://react.i18next.com/latest/usetranslation-hook
   let navigate = useNavigate();

@@ -1,5 +1,5 @@
 import React from "react";
-import { characters } from "../data/characters";
+// import { characters } from "../data/characters";
 import { preferencesArray, scoredCharacters } from './Quiz';
 
 
@@ -9,7 +9,7 @@ function Results() {
   console.log("hello results world");
   console.log(preferencesArray);
   console.log("current characters array: ")
-  const sortedCharacters = scoredCharacters.sort((a,b) => b.score - a.score);
+  // const sortedCharacters = scoredCharacters.sort((a,b) => b.score - a.score);
 
 
   return (
