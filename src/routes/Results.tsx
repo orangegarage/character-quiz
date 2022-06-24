@@ -1,18 +1,18 @@
-import React, { useState } from "react";
-import { scoredCharacters } from "./Quiz";
-import { selectedCharacter } from "./All";
+import React, { useState } from 'react';
+import { scoredCharacters } from './Quiz';
+import { selectedCharacter } from './All';
 
 function Results() {
   // function computeScore()
-  console.log("Results Page");
-  console.log("sorted array: ");
+  console.log('Results Page');
+  console.log('sorted array: ');
   const sortedCharacters = scoredCharacters.sort((a, b) => b.score - a.score);
 
   console.log(sortedCharacters);
   let [index, setIndex] = useState(-1);
 
   const renderTop3 = (characterList: any) => {
-    console.log("render current characters array: ");
+    console.log('render current characters array: ');
     console.log(characterList);
     let top3: JSX.Element[] = [];
     for (let i = 0; i < 3; i++) {
