@@ -5,8 +5,9 @@ export let characters = [
     name: "char1-name-sample",
     image: charA,
     traits: ["male", "trait-2", "trait-3", "trait-4"],
-    flavortext: "char1-flavortext sample, male character has traits oo cool wow nice amazing lorem ipsum",
-    score: 0
+    flavortext:
+      "char1-flavortext sample, male character has traits oo cool wow nice amazing lorem ipsum",
+    score: 0,
   },
   {
     number: 2,
@@ -14,7 +15,7 @@ export let characters = [
     image: charB,
     traits: ["female", "trait-2", "trait-5", "trait-6"],
     flavortext: "char2-flavortext",
-    score: 0
+    score: 0,
   },
   {
     number: 3,
@@ -22,6 +23,6 @@ export let characters = [
     image: charC,
     traits: ["male", "costly", "trait-7", "trait-8"],
     flavortext: "char3-flavortext",
-    score: 0
+    score: 0,
   },
 ];

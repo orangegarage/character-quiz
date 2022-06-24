@@ -16,15 +16,30 @@ function Quiz() {
   let [preferences, setPreferences] = useState(preferencesArray);
 
   function doCalculation() {
-    const prioritizedTraits = preferencesArray.filter(trait => trait.includes("prioritize")).map(trait=>trait.replace("-prioritize", ""));
-    const preferredTraits = preferencesArray.filter(trait => trait.includes("prefer")).map(trait=>trait.replace("-prefer", ""));
-    const onlyTraits = preferencesArray.filter(trait => trait.includes("only")).map(trait=>trait.replace("-only", ""));
-    
-    for(let i = 0; i < characters.length; i ++) {
-      const characterPrioritizedTraits = characters[i].traits.filter(trait=>prioritizedTraits.includes(trait)).length;
-      const characterPreferredTraits = characters[i].traits.filter(trait=>preferredTraits.includes(trait)).length;
-      const characterOnlyTraits = characters[i].traits.filter(trait=>onlyTraits.includes(trait)).length;
-      characters[i].score = (characterOnlyTraits + 1) * (10 * (characterOnlyTraits + characterPreferredTraits) + 5 * characterPrioritizedTraits)
+    const prioritizedTraits = preferencesArray
+      .filter((trait) => trait.includes("prioritize"))
+      .map((trait) => trait.replace("-prioritize", ""));
+    const preferredTraits = preferencesArray
+      .filter((trait) => trait.includes("prefer"))
+      .map((trait) => trait.replace("-prefer", ""));
+    const onlyTraits = preferencesArray
+      .filter((trait) => trait.includes("only"))
+      .map((trait) => trait.replace("-only", ""));
+
+    for (let i = 0; i < characters.length; i++) {
+      const characterPrioritizedTraits = characters[i].traits.filter((trait) =>
+        prioritizedTraits.includes(trait)
+      ).length;
+      const characterPreferredTraits = characters[i].traits.filter((trait) =>
+        preferredTraits.includes(trait)
+      ).length;
+      const characterOnlyTraits = characters[i].traits.filter((trait) =>
+        onlyTraits.includes(trait)
+      ).length;
+      characters[i].score =
+        (characterOnlyTraits + 1) *
+        (10 * (characterOnlyTraits + characterPreferredTraits) +
+          5 * characterPrioritizedTraits);
       console.log(characters[i].name + ": " + characters[i].score);
     }
     scoredCharacters = characters;
@@ -46,7 +61,7 @@ function Quiz() {
   }
 
   function choseAnswer(answers: Array<string>, answer: string) {
-    if(answer != null) {
+    if (answer != null) {
       preferences[currentQuestion] = answer;
       setPreferences(preferences);
       preferencesArray = preferences;
