@@ -1,5 +1,9 @@
 {
-  "app": {},
+  "home": {
+    "welcome": "Welcome to Lost Ark Character Quiz!",
+    "message": "This quiz will try to choose the class you will enjoy playing based on your playstyle and other preferences.\nThere are no right or wrong answers to the questions - it is only to gauge your preference.\nThis quiz is meant to serve as a guide to narrow down options for you when you are feeling overwhelmed.\nIf you already have a different character in mind, go for it. The only way to know for sure is to play.\nHave fun!",
+    "takeQuiz": "Take Quiz"
+  },
   "questions": {
     "q1-question": "Do you prefer a male or female character? (Many classes are genderlocked in Lost Ark)",
     "q2-question": "Are you willing to invest heavy money and/or time in the class? (Subjective)",

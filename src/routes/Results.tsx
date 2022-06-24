@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { scoredCharacters } from './Quiz';
 import { selectedCharacter } from './All';
+import { Nav } from '../components/nav';
 
 function Results() {
   // function computeScore()
@@ -43,6 +44,7 @@ function Results() {
 
   return (
     <div>
+      <Nav />
       <div className="text-white m-auto">
         <ul className="mt-20 flex flex-wrap justify-center">
           {renderTop3(sortedCharacters)}
