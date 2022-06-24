@@ -17,8 +17,8 @@ function Quiz() {
 
   function doCalculation() {
     const prioritizedTraits = preferencesArray.filter(trait => trait.includes("prioritize")).map(trait=>trait.replace("-prioritize", ""));
-    const preferredTraits =  preferencesArray.filter(trait => trait.includes("prefer")).map(trait=>trait.replace("-prefer", ""));
-    const onlyTraits =  preferencesArray.filter(trait => trait.includes("only")).map(trait=>trait.replace("-only", ""));
+    const preferredTraits = preferencesArray.filter(trait => trait.includes("prefer")).map(trait=>trait.replace("-prefer", ""));
+    const onlyTraits = preferencesArray.filter(trait => trait.includes("only")).map(trait=>trait.replace("-only", ""));
     
     for(let i = 0; i < characters.length; i ++) {
       const characterPrioritizedTraits = characters[i].traits.filter(trait=>prioritizedTraits.includes(trait)).length;
@@ -42,16 +42,13 @@ function Quiz() {
     if (currentQuestion > 0) {
       setCurrentQuestion(currentQuestion - 1);
     }
-    console.log("currentQuestion" + currentQuestion);
     return currentQuestion;
   }
 
   function choseAnswer(answers: Array<string>, answer: string) {
-    console.log("chose answer: " + answer);
     if(answer != null) {
       preferences[currentQuestion] = answer;
       setPreferences(preferences);
-      console.log("Current preferences: " + preferences);
       preferencesArray = preferences;
     }
     let answerElement = document.getElementById(answer);

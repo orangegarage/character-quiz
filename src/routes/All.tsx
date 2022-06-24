@@ -3,36 +3,8 @@ import { characters } from "../data/characters";
 import { scoredCharacters } from './Quiz';
 import "../App.css";
 
-function AllCharacters() {
-  let [index, setIndex] = useState(-1);
-
-  function characterClick(characterName: string) {
-    for (let i: number = 0; i < characters.length; i++) {
-      if (characters[i].name === characterName) {
-        console.log("clicked: " + characterName);
-        setIndex(i);
-        return index;
-      }
-    }
-  }
-
-  const sortedCharacters = scoredCharacters.sort((a,b) => b.score - a.score);
-  let characterList = sortedCharacters.map((character) => {
-    return (
-      <li
-        key={character.name}
-        onClick={() => characterClick(character.name)}
-        className="mt-6 mx-6 text-[#61dafb]"
-      >
-        <div className="flex justify-center">
-          <img src={character.image} alt={character.name} />
-        </div>
-        {character.name}
-      </li>
-    );
-  });
-
-  function selectedCharacter(index: number) {
+export const sortedCharacters = scoredCharacters.sort((a,b) => b.score - a.score);
+export function selectedCharacter(index: number) {
     if (index === -1) {
       return <p className="hidden">Keep it nothing </p>;
     } else {
@@ -96,6 +68,34 @@ function AllCharacters() {
       );
     }
   }
+
+function AllCharacters() {
+  let [index, setIndex] = useState(-1);
+
+  function characterClick(characterName: string) {
+    for (let i: number = 0; i < characters.length; i++) {
+      if (characters[i].name === characterName) {
+        console.log("clicked: " + characterName);
+        setIndex(i);
+        return index;
+      }
+    }
+  }
+
+  let characterList = sortedCharacters.map((character) => {
+    return (
+      <li
+        key={character.name}
+        onClick={() => characterClick(character.name)}
+        className="mt-6 mx-6 text-[#61dafb]"
+      >
+        <div className="flex justify-center">
+          <img src={character.image} alt={character.name} />
+        </div>
+        {character.name}
+      </li>
+    );
+  });
 
   function toggleVisibility() {
     //toggle visibility by changing index to -1, as it is negative 1 when nothing is selected
