@@ -16,12 +16,9 @@ function Quiz() {
   let [preferences, setPreferences] = useState(preferencesArray);
 
   function doCalculation() {
-    const prioritizedTraitsWithModifier =  preferencesArray.filter(trait => trait.includes("prioritize"));
-    const prioritizedTraits = prioritizedTraitsWithModifier.map(trait=>trait.replace("-prioritize", ""));
-    const preferredTraitsWithModifier =  preferencesArray.filter(trait => trait.includes("prefer"));
-    const preferredTraits = preferredTraitsWithModifier.map(trait=>trait.replace("-prefer", ""));
-    const onlyTraitsWithModifier =  preferencesArray.filter(trait => trait.includes("only"));
-    const onlyTraits = onlyTraitsWithModifier.map(trait=>trait.replace("-only", ""));
+    const prioritizedTraits = preferencesArray.filter(trait => trait.includes("prioritize")).map(trait=>trait.replace("-prioritize", ""));
+    const preferredTraits =  preferencesArray.filter(trait => trait.includes("prefer")).map(trait=>trait.replace("-prefer", ""));
+    const onlyTraits =  preferencesArray.filter(trait => trait.includes("only")).map(trait=>trait.replace("-only", ""));
     
     for(let i = 0; i < characters.length; i ++) {
       const characterPrioritizedTraits = characters[i].traits.filter(trait=>prioritizedTraits.includes(trait)).length;
