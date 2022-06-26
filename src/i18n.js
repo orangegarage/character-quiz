@@ -1,10 +1,10 @@
-import i18n from "i18next";
-import { initReactI18next } from "react-i18next";
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
 
-import translationEN from "./data/locales/en.json";
-import translationKR from "./data/locales/kr.json";
-import Backend from "i18next-http-backend";
-import LanguageDetector from "i18next-browser-languagedetector";
+import translationEN from './data/locales/en.json';
+import translationKR from './data/locales/kr.json';
+import Backend from 'i18next-http-backend';
+import LanguageDetector from 'i18next-browser-languagedetector';
 
 const resources = {
   en: {
@@ -29,7 +29,7 @@ i18n
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
     resources,
-    fallbackLng: "en",
+    fallbackLng: 'en',
     debug: true,
   });
 

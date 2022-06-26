@@ -1,10 +1,11 @@
-import React, { useState } from "react";
-import { characters } from "../data/characters";
-import { scoredCharacters } from "./Quiz";
-import "../App.css";
+import React, { useState } from 'react';
+import { characters } from '../data/characters';
+import { scoredCharacters } from './Quiz';
+import '../App.css';
+import { Nav } from '../components/nav';
 
 export const sortedCharacters = scoredCharacters.sort(
-  (a, b) => b.score - a.score
+  (a, b) => b.score - a.score,
 );
 export function selectedCharacter(index: number) {
   if (index === -1) {
@@ -47,7 +48,7 @@ export function selectedCharacter(index: number) {
                 {sortedCharacters[index].flavortext}
               </p>
               <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                {sortedCharacters[index].traits + " "}
+                {sortedCharacters[index].traits + ' '}
               </p>
             </div>
             <div className="flex items-center p-6 space-x-2 rounded-b border-t border-gray-200 dark:border-gray-600">
@@ -77,7 +78,7 @@ function AllCharacters() {
   function characterClick(characterName: string) {
     for (let i: number = 0; i < characters.length; i++) {
       if (characters[i].name === characterName) {
-        console.log("clicked: " + characterName);
+        console.log('clicked: ' + characterName);
         setIndex(i);
         return index;
       }
@@ -106,6 +107,7 @@ function AllCharacters() {
 
   return (
     <div>
+      <Nav />
       <div className="characters m-auto">
         <ul className="mt-20 characterList flex flex-wrap justify-center">
           {characterList}
