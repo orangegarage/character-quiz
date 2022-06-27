@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import { characters } from '../data/characters';
 import { scoredCharacters } from './Quiz';
 import '../App.css';
+import { useTranslation } from 'react-i18next';
 import { Nav } from '../components/nav';
 
 export const sortedCharacters = scoredCharacters.sort(
   (a, b) => b.score - a.score,
 );
-export function selectedCharacter(index: number) {
+export function SelectedCharacter(index: number) {
+  const { t } = useTranslation();
   if (index === -1) {
     return <p className="hidden">Keep it nothing </p>;
   } else {
@@ -44,8 +46,8 @@ export function selectedCharacter(index: number) {
             </div>
 
             <div className="p-6 space-y-6">
-              <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                {sortedCharacters[index].flavortext}
+              <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400 whitespace-pre-line">
+                {t('flavortexts.' + sortedCharacters[index].name)}
               </p>
               <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
                 {sortedCharacters[index].traits + ' '}
@@ -95,7 +97,7 @@ function AllCharacters() {
         <div className="flex justify-center">
           <img src={character.image} alt={character.name} />
         </div>
-        {character.name}
+        <div className="flex justify-center">{character.name}</div>
       </li>
     );
   });
@@ -114,7 +116,7 @@ function AllCharacters() {
         </ul>
       </div>
       <div className="characterCard" onClick={toggleVisibility}>
-        {selectedCharacter(index)}
+        {SelectedCharacter(index)}
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { scoredCharacters } from './Quiz';
-import { selectedCharacter } from './All';
+import { SelectedCharacter } from './All';
 import { Nav } from '../components/nav';
 
 function Results() {
@@ -30,7 +30,9 @@ function Results() {
               alt={characterList[i].name}
             />
           </div>
-          {i + 1}. {characterList[i].name}
+          <div className="flex justify-center">
+            {i + 1}. {characterList[i].name}
+          </div>
         </li>
       );
     }
@@ -52,7 +54,7 @@ function Results() {
         <p className="mt-20 text-center">click characters to view details</p>
       </div>
       <div className="characterCard" onClick={toggleVisibility}>
-        {selectedCharacter(index)}
+        {SelectedCharacter(index)}
       </div>
     </div>
   );

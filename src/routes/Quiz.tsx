@@ -100,7 +100,7 @@ function Quiz() {
   return (
     <>
       <Nav />
-      <div className="quizDiv">
+      <div className="quizDiv whitespace-pre-line">
         <div className="carouselDiv text-white ">
           <p className="my-10 flex justify-center">
             {currentQuestion + 1} out of {questions.length}
