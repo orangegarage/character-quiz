@@ -18,7 +18,7 @@ export function SelectedCharacter(index: number) {
         id="defaultModal"
         tabIndex={-1}
         aria-hidden="true"
-        className="flex justify-center pt-20 overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full"
+        className="flex justify-center pt-20 overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full"
       >
         <div className="relative p-4 w-full max-w-2xl h-full md:h-auto">
           <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
@@ -45,11 +45,11 @@ export function SelectedCharacter(index: number) {
               </button>
             </div>
 
-            <div className="p-6 space-y-6">
+            <div className="p-6 space-y-6 h-96 overflow-y-auto">
               <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400 whitespace-pre-line">
                 {t('flavortexts.' + sortedCharacters[index].name)}
               </p>
-              <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+              <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400 ">
                 {sortedCharacters[index].traits + ' '}
               </p>
             </div>
