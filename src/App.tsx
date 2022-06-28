@@ -17,6 +17,7 @@ function App() {
         <a className="my-10 App-link font-bold text-3xl" href="/Quiz">
           {t('home.takeQuiz')}
         </a>
+        <p className="mt-10 text-lg">{t('home.thanks')}</p>
       </header>
       <Outlet />
     </div>
