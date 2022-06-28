@@ -24,7 +24,7 @@ export function SelectedCharacter(index: number) {
           <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
             <div className="flex justify-between items-start p-4 rounded-t border-b dark:border-gray-600">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                {sortedCharacters[index].name}
+                {t(sortedCharacters[index].name + '.name')}
               </h3>
               <button
                 type="button"
@@ -47,10 +47,10 @@ export function SelectedCharacter(index: number) {
 
             <div className="p-6 space-y-6 h-96 overflow-y-auto">
               <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400 whitespace-pre-line">
-                {t('flavortexts.' + sortedCharacters[index].name)}
+                {t(sortedCharacters[index].name + '.flavortext')}
               </p>
               <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400 ">
-                {sortedCharacters[index].traits + ' '}
+                {t(sortedCharacters[index].name + '.traits')}
               </p>
             </div>
             <div className="flex items-center p-6 space-x-2 rounded-b border-t border-gray-200 dark:border-gray-600">
@@ -58,13 +58,13 @@ export function SelectedCharacter(index: number) {
                 type="button"
                 className="text-white bg-blue-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
-                Overview
+                {t('modal.overview')}
               </button>
               <button
                 type="button"
                 className="text-white bg-blue-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm font-medium px-5 py-2.5"
               >
-                Build Guide
+                {t('modal.build')}
               </button>
             </div>
           </div>
@@ -76,7 +76,7 @@ export function SelectedCharacter(index: number) {
 
 function AllCharacters() {
   let [index, setIndex] = useState(-1);
-
+  const { t } = useTranslation();
   function characterClick(characterName: string) {
     for (let i: number = 0; i < characters.length; i++) {
       if (characters[i].name === characterName) {
@@ -97,7 +97,9 @@ function AllCharacters() {
         <div className="flex justify-center">
           <img src={character.image} alt={character.name} />
         </div>
-        <div className="flex justify-center">{character.name}</div>
+        <div className="flex justify-center">
+          {t(character.name + '.shortname')}
+        </div>
       </li>
     );
   });

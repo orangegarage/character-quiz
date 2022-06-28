@@ -1,8 +1,10 @@
 import { NavLink, useLocation } from 'react-router-dom';
 import jinLogo from '../../data/img/logo/jinhub.webp';
 import { Paths } from './constants';
+import { useTranslation } from 'react-i18next';
 
 export function Nav() {
+  const { t } = useTranslation();
   return (
     <div className="bg-[#0583D2] flex items-center">
       <nav className="flex items-center p-4 mx-auto">
@@ -15,9 +17,9 @@ export function Nav() {
           <img src={jinLogo} alt="jinLogo" className="h-10 w-10"></img>
         </a>
         <div className="text-#61dafb text-lg flex justify-items-center">
-          <Tab path={Paths.Home} routeName="Home" />
-          <Tab path={Paths.Quiz} routeName="Quiz" />
-          <Tab path={Paths.All} routeName="View All" />
+          <Tab path={Paths.Home} routeName={t('nav.Home')} />
+          <Tab path={Paths.Quiz} routeName={t('nav.Quiz')} />
+          <Tab path={Paths.All} routeName={t('nav.All')} />
         </div>
       </nav>
     </div>

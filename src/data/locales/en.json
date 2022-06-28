@@ -4,6 +4,15 @@
     "message": "This quiz will try to choose the class you will enjoy playing based on your playstyle and other preferences.\nThere are no right or wrong answers to the questions - it is only to gauge your preference.\nThis quiz is meant to serve as a guide to narrow down options for you when you are feeling overwhelmed.\nIf you already have a different character in mind, go for it. The only way to know for sure is to play.\nHave fun!",
     "takeQuiz": "Take Quiz"
   },
+  "modal": {
+    "overview": "Overview",
+    "build": "Build Guide"
+  },
+  "nav": {
+    "Home": "Home",
+    "Quiz": "Quiz",
+    "All": "View All"
+  },
   "questions": {
     "q1-question": "What would you enjoy the most while playing the game?",
     "q2-question": "How do you like to deal damage?",
@@ -91,7 +100,31 @@
     "global-prioritize": "I would like an emphasis on classes currently available globally",
     "global-neutral": "Yes, recommend me all potential classes / I am on the Korea server"
   },
-  "flavortexts": {
-    "char1": "Character 1 is a strong dps that handles a big chunk of the party's damage.\nHe has a great skillset that provides consistent damage output, as well as amazing counters and stagger metrics.\nWhile he is short-mid range, he has a variety of mobility skills that let him close the gap fairly easily.\nBut he does have lower health and defense, and combined with the fact that he works best in the short range, a mistake could be fatal.\nAdditionally, to reach his full damage potential, he needs to hit back attacks, which makes him a difficult character to work with, and as a result, makes him a middling tier character."
+  "results": {
+    "instructions": "Click on each character to view more details.\nClick on View All for all characters now ordered by your preference"
+  },
+  "char1": {
+    "shortname": "char1",
+    "name": "Character 1",
+    "flavortext": "Character 1 is a strong dps that handles a big chunk of the party's damage.\nHe has a great skillset that provides consistent damage output, as well as amazing counters and stagger metrics.\nWhile he is short-mid range, he has a variety of mobility skills that let him close the gap fairly easily.\nBut he does have lower health and defense, and combined with the fact that he works best in the short range, a mistake could be fatal.\nAdditionally, to reach his full damage potential, he needs to hit back attacks, which makes him a difficult character to work with, and as a result, makes him a middling tier character.",
+    "traits": "#dps #short/midrange #stagger #counter #back_attack #difficulty_high"
+  },
+  "char2": {
+    "shortname": "Jay Kay",
+    "name": "Jamiroquai",
+    "flavortext": "Everything is good and brown, I'm here again with a sunshine smile upon my face\nMy friends are close at hand and all my inhibitions have disappeared without a trace\nI'm glad, oh that I found somebody who I can rely on - this is the return of the space cowboy, interplanetary good vibe zone",
+    "traits": "#Jamiroquai #The Return of the Space Cowboy"
+  },
+  "char3": {
+    "shortname": "MCR",
+    "name": "My Chemical Romance",
+    "flavortext": "Sometimes I get the feeling she's watching over me, and other times I feel like I should go\nAnd through it all ,the rise and fall, the bodies in the streets, and when you're gon we want you all to know",
+    "traits": "#My Chemical Romance #MCR #Welcome to the Black Parade"
+  },
+  "char4": {
+    "shortname": "Em",
+    "name": "Eminem",
+    "flavortext": "Nowadays everbody wanna talk like they got something to say, but nothing comes out when they move their lips,\njust a bunch of gibberish, and motherfuckers act like they forgot about Dre",
+    "traits": "#Eminem #Dr Dre #Forgot about Dre"
   }
 }

@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { scoredCharacters } from './Quiz';
 import { SelectedCharacter } from './All';
 import { Nav } from '../components/nav';
+import { useTranslation } from 'react-i18next';
 
 function Results() {
-  // function computeScore()
+  const { t } = useTranslation();
   console.log('Results Page');
   console.log('sorted array: ');
   const sortedCharacters = scoredCharacters.sort((a, b) => b.score - a.score);
@@ -31,7 +32,7 @@ function Results() {
             />
           </div>
           <div className="flex justify-center">
-            {i + 1}. {characterList[i].name}
+            {i + 1}. {t(characterList[i].name + '.shortname')}
           </div>
         </li>
       );
@@ -47,11 +48,13 @@ function Results() {
   return (
     <div>
       <Nav />
-      <div className="text-white m-auto">
+      <div className="text-white m-auto whitespace-pre-line">
         <ul className="mt-20 flex flex-wrap justify-center">
           {renderTop3(sortedCharacters)}
         </ul>
-        <p className="mt-20 text-center">click characters to view details</p>
+        <p className="mt-20 text-center font-bold">
+          {t('results.instructions')}
+        </p>
       </div>
       <div className="characterCard" onClick={toggleVisibility}>
         {SelectedCharacter(index)}
