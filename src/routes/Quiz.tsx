@@ -112,8 +112,11 @@ function Quiz() {
           </div>
         </div>
         <div className="quizNavDiv lg:w-1/2 w-full mx-auto flex items-center justify-center">
-          <div className="navButtonDiv text-white lg:mx-10 md:mx-10 mr-3">
-            <button onClick={previousQuestion}>
+          <div
+            className="navButtonDiv text-white lg:mx-10 md:mx-10 mr-3 my-10"
+            onClick={previousQuestion}
+          >
+            <button>
               <svg
                 className="lg:w-20 lg:h-20 md:w-10 md:h-10 w-5 h-5 text-white"
                 fill="none"
@@ -134,8 +137,11 @@ function Quiz() {
             {/* may need to take justify-center out for this one for legibility in start and end of questions */}
             <ul className="w-full">{listAnswers}</ul>
           </div>
-          <div className="navButtonDiv text-whitelg:mx-10 md:mx-10 mr-3">
-            <button onClick={nextQuestion}>
+          <div
+            className="navButtonDiv text-whitelg:mx-10 md:mx-10 mr-3 my-10"
+            onClick={nextQuestion}
+          >
+            <button>
               <svg
                 className="lg:w-20 lg:h-20 md:w-10 md:h-10 w-5 h-5 text-white"
                 fill="none"
