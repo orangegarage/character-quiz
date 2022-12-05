@@ -95,7 +95,7 @@ function AllCharacters() {
         className="mt-6 mx-6 text-[#61dafb]"
       >
         <div className="flex justify-center">
-          <img src={character.image} alt={character.name} />
+          <img src={character.photo} alt={character.name} />
         </div>
         <div className="flex justify-center">
           {t(character.name + '.shortname')}
