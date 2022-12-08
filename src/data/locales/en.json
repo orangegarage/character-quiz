@@ -92,7 +92,7 @@
 
     "movetier-high-prioritize": "Yes, I think having good movement is very important",
     "movetier-midhigh-prefer": "A little, I would enjoy a character with good movement.",
-    "neutral-movetier": "It's not something I feel strongly about, please don't take movement into consideration.",
+    "neutral-movetier": "I would like a character that shines in other ways even if their movement may be average/low",
 
     "evasion-high-prioritize": "It's very important, please prioritize a character with high evasion",
     "evasion-midhigh-prefer": "A little, so I would enjoy a character with high evasion.",
@@ -123,8 +123,8 @@
     "shortname": "Alisa",
     "name": "Alisa Bosconovitch",
     "flavortext": "Alisa has great movement and poke strings, so it is great for fighting in the mid range and look for a whiff punish.\nShe excels at using her fast pokes to gain a health advantage and leveraging it as the round progresses. While her pokes are great, you will see more value from a well-timed, quick poke than spamming it all the time.\nHer stance, destroyer form, is a highly offensive stance that prevents Alisa from ducking or dashing. However, she can fly around with chainsaw powered attacks that are advantageous on block.\nAlisa's main gameplan is on the simple side, but if you want to utilize the chainsaw form heavily, there may be more to memorize.\nShe does fall behind similar characters in terms of damage and combo potential so she is rarer in a tournament setting.\nUltimately, Alisa is a great, beginner friendly character for all the robo-girl enjoyers!",
-    "recommended": "#Chanel, #Cuddle Core, #AO",
-    "traits": "#robo_girl #movement #poke #defense #chainsaw_setups #learn_tekken #beginner_friendly",
+    "recommended": "Recommended Players: #Chanel, #Cuddle Core, #AO",
+    "traits": "#robo_girl #movement #poke #defense #chainsaw_setups #difficulty_easy #beginner_friendly",
     "overview": "https://youtu.be/MHmpW_t1msg",
     "guide": "https://youtu.be/aPAJDYlia9g"
   },
@@ -132,8 +132,8 @@
     "shortname": "Akuma",
     "name": "Akuma / Gouki",
     "flavortext": "As a guest character from Street Fighter, Akuma looks and plays a bit differently, primarily characterized by his active jumping.\nUnlike other characters he does not have a rage drive, but he has a special 'meter' system which he uses for terrible terrible damage.\nAkuma's various strings from crouchjab and d+3 are very effective at dismantling the opponent's guard, and he also has a powerful d+4 that knocks down characters.\nWhile his damage potential alone lets him be a top-tier character, his gameplan and combo is hard to execute, as well as being more similar to Street Figher than Tekken.\nUltimately, because of his differences, Akuma is not recommended to a new player unless they are well-versed in Street Figher already.",
-    "recommended": "#Awais Honey #K2RO #SuperAkouma",
-    "traits": "#combo #mixup #aggressive #keepout #jumping #ki_bar #top_tier_with_ki",
+    "recommended": "Recommended Players: #Awais Honey #K2RO #SuperAkouma",
+    "traits": "#combo #mixup #aggressive #keepout #jumping #ki_bar #top_tier_with_ki #difficulty_hard",
     "overview": "https://youtu.be/xhu662tqCzU",
     "guide": "https://youtu.be/HKTj8UsBm1w"
   },
@@ -141,8 +141,8 @@
     "shortname": "Anna",
     "name": "Anna Williams",
     "flavortext": "Thanks to her amazing mixup potential, Anna can go 50/50 against anyone. Her powerful crouch mixups threaten enemies even from the midrange.\nAnna's high combo damage and buffs on key moves lets her trade blows with most of the cast and come out on top.\nShe has amazing, spammable combo starter moves as well as great poking mixups that let her pressure the opponent infinitely.\nAnna has great counterhit moves in all ranges, and has a lot of setup potential through her Chaos Stance.\nAnna does have weaker punish and tracking compared to other characters, which does bring her down a peg in the highest level.\nUltimately, Anna's simple gameplan and commands make her a great character to start learning Tekken with.",
-    "recommended": "#Fran #Nameless King",
-    "traits": "#aggression #mixup #combo #poke #Chaos_Stance #learn_tekken",
+    "recommended": "Recommended Players: #Fran #Nameless King",
+    "traits": "#aggression #mixup #combo #poke #Chaos_Stance #difficulty_easy",
     "overview": "https://youtu.be/UQ1ZNNqXHW0",
     "guide": "https://youtu.be/b5atAkkBvNc"
   },
@@ -150,7 +150,7 @@
     "shortname": "AK",
     "name": "Armor King",
     "flavortext": "Damage, utility, and a cool design? Armor King truly has it all. The recent buffs have benefitted Armor King in this damage focused meta.\nArmor King has high combo damage and wall-carry potential, which are exacerbated in maps where you can break floors/walls. He has great punishes, panic moves, and moves that combo on counter hits.\nArmor King's variety of grabs make sure the enemy crouches often, which he can take advantage of with his many safe mid options.\nIt is to be noted, however, that all of this only come into play if you have great movement - Armor King's aggression potential relies on wavedashing, and he lacks low attacks that knocks down the opponent.\nUltimately, Armor King is definitely a great character with strong combos and grabs as well as being cool incarnate, but his difficult gameplan makes him difficult to recommend to new players.",
-    "recommended": "#JDCR #Hakaioh #Poltan",
+    "recommended": "Recommended Players: #JDCR #Hakaioh #Poltan",
     "traits": "#combo #chain_grab #counterhit #all-rounder #king_of_cool #wavedash #wrestling #advanced",
     "overview": "https://youtu.be/1lg-0ffZNmA",
     "guide": "https://youtu.be/4l18RdV5uWQ"
@@ -159,8 +159,8 @@
     "shortname": "Asuka",
     "name": "Asuka Kazama",
     "flavortext": "Asuka is a character modeled after 'offense is the best defense'. Her attacks may put you in a disadvantageous situation, but her parries and panic moves are amazing and quickly let you take back the tempo again.\nHer never-ending stream of attacks contain many combo starters, and Asuka has a great, well known combo setup with her unblockable move.\nAdditionally, Asuka has amazing damage potential in her rage drive and special mount, which gives her some tools for comebacks.\nUnfortunately, her poking moves aren't amazing and movement is relatively slow, meaning she has a limit to playing a reactive style.\nHer defensive attacks and easy commands mean Asuka is often recommended to new players.",
-    "recommended": "#SLine #Fergus #Dimeback",
-    "traits": "#aggression #defense #evasion #setups #parry #back3 #learn_tekken #beginner_friendly",
+    "recommended": "Recommended Players: #SLine #Fergus #Dimeback",
+    "traits": "#aggression #defense #evasion #setups #parry #back3 #difficulty_easy #beginner_friendly",
     "overview": "https://youtu.be/JygnSvomO8I",
     "guide": "https://youtu.be/8BdhgbXuaEI"
   },
@@ -168,9 +168,18 @@
     "shortname": "Bob",
     "name": "Bob (Robert Richards)",
     "flavortext": "Bob has everything - long reach, high damage, and great movement. His basic attacks are long and strong, which makes it easy for him to keep the enemy at bay.\nBob has many strings that let him get a mental advantage over enemies over whether to complete them. He also has amazing comeback potential through a strong mixup of hellsweep and mid.\nSuch positive traits are amplified at the wall, especially thanks to Bob's high wall combo damage. In best(worst?) case scenarios, Bob can carry the opponent to the wall and end the game there in the blink of an eye.\nBob is definitely a strong, fun, exciting character to play, but his pickrate does not reflect that, presumably due to his bulkier body.\nUltimately, Bob has a simpler gameplan but with some execution barriers, so he is recommended to players who are more used to the Tekken system.",
-    "recommended": "Recommend",
-    "traits": "",
-    "overview": "",
-    "guide": ""
+    "recommended": "Recommended Players: #Ulsan",
+    "traits": "#allrounder #strings #aggression #poke #keepout #wave #speed_and_weight #difficulty_mid",
+    "overview": "https://youtu.be/EXSr4KI66m8",
+    "guide": "https://youtu.be/S_iGAXUSPs4"
+  },
+  "Bryan Fury": {
+    "shortname": "Bryan",
+    "name": "Bryan Fury",
+    "flavortext": "With his high damage moves and combos combined with an unblockable taunt, Bryan definitely made every Tekken fan salivate a little at the thought of playing him with precision. Bryan also happens to be the symbolic character of Knee, the best Tekken player in the world\nBryan's moves generally pack a punch, and his decent wall carry makes him lethal. Bryan's taunt disable's the opponent's guard and lets him chain together a basically unblockable attack.\nThis makes Bryan especially strong in situations where he has a frame advantage - such as oki situations or after a successful punish, where he can mix up the opponent with his high damage moves.\nHowever, these situations are hard to create because Bryan's movement can be hard to execute, and there are no gimmicky, abusable moves, and his main attacks are relatively slow.\nWhile Bryan doesn't have particularly difficult execution and a easy to understand gameplan, the gameplan is hard to actually get right, making him frustrating if you are just starting to play the game.",
+    "recommended": "Recommended Player: #Knee #JimmyJTran(Mr.Naps) #YSEMulti",
+    "traits": "#Tekken_is_Knee #counterhit #aggression #Taunt_Jet_Upper #plus_frames #difficulty_mid",
+    "overview": "https://youtu.be/hCofbHccJAc",
+    "guide": "https://youtu.be/xitzRnb1QF8"
   }
 }
