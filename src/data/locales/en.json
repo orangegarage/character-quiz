@@ -1,13 +1,14 @@
 {
   "home": {
-    "welcome": "Welcome to Lost Ark Character Quiz!",
-    "message": "This quiz will try to choose the class you will enjoy playing based on your playstyle and other preferences.\nThere are no right or wrong answers to the questions - it is only to gauge your preference.\nThis quiz is meant to serve as a guide to narrow down options for you when you are feeling overwhelmed.\nIf you already have a different character in mind, go for it. The only way to know for sure is to play.\nHave fun!",
-    "takeQuiz": "Take Quiz",
-    "thanks": "Special thanks to: ... and you!"
+    "welcome": "Welcome to the Tekken 7 Character Selection Quiz!",
+    "message": "This quiz will try to choose the character you will enjoy playing based on your playstyle and other preferences.\nThere are no right or wrong answers to the questions - it is only to gauge your preference.\nThis quiz is meant to serve as a guide to narrow down options for you when you are feeling overwhelmed.\nIf you already have different character in mind, go for it. The only way to know for sure is to play.\nPlease feel free to leave feedback on the links provided below.\nHave fun!",
+    "takeQuiz": "Take the Quiz",
+    "feedbackLink": "Questions/Feedback",
+    "thanks": "Special thanks to Wecka, Lubamartin, Bigcookie, Jayelly, LoseAgainMan, Merv202, DRX_Chanel, GuraTV\n...and you!"
   },
   "modal": {
-    "overview": "Overview",
-    "build": "Build Guide"
+    "overview": "Combos",
+    "build": "Guide"
   },
   "nav": {
     "Home": "Home",
@@ -15,117 +16,161 @@
     "All": "View All"
   },
   "questions": {
-    "q1-question": "What would you enjoy the most while playing the game?",
-    "q2-question": "How do you like to deal damage?",
-    "q3-question": "How would you feel about having to target specifically the head/back for max damage?",
-    "q4-question": "What is your preferred range?",
-    "q5-question": "Do you think a good 'counter' move is more important than other traits?\n(When a boss glows blue, using a counter move at the right time will stun him)",
-    "q6-question": "Is having a higher 'stagger' trait over other factors important to you?\n(Attacks with high stagger deplete a purple gauge under bosses and will stun them)",
-    "q7-question": "Do you think built-in survivability is more important than other traits?\n(Higher base defense/health, skills that let you live through attacks)",
-    "q8-question": "How much mobility would you like on your class? This includes skills.",
-    "q9-question": "How do you feel about a charge or delay in skills? This includes channeling.",
-    "q10-question": "Do you have a gender preference? (Many classes are genderlocked in Lost Ark)",
-    "q11-question": "Do you care about class tiers? (PvE based, tiers are subjective)",
-    "q12-question": "Do you have preference on class difficulty? (Difficulty is subjective)",
-    "q13-question": "Last question: Are you ok with getting recommendations of classes only available in Korea for now?"
+    "q1": "Do you prefer a male or female character?",
+    "q2": "Do you want DLC characters, including crossovers, recommended to you?",
+    "q3": "During a round, what would do you think you'd enjoy most (primary goal)?",
+    "q4": "What would be something you enjoy second? (Choose the same thing to double down)",
+    "q5": "How do you see yourself attacking the opponent?",
+    "q6": "What is another way you can see yourself attacking the opponent? (Choose the same thing to double down)",
+    "q7": "The opponent is on the ground - what do you want to do? (Okizeme)",
+    "q8": "Would you want to play a character focused around setups?",
+    "q9": "Would you want to play a character that focuses on their stances (attack styles)?",
+    "q10": "Do you value your characters' built in movement? (backdash/sidestep)",
+    "q11": "How important do you think evasion in a character's moveset should be? (Includes stances and powercrush)",
+    "q12": "Are you ok with playing characters with Ki gauge and projectiles? (Geese/Akuma/Eliza)",
+    "q13": "Do you care about character tiers?: \n(Tiers are subjective, all characters are playable.)",
+    "q14": "One last thing, do you have preference on character difficulty?\n(Difficulty is subjective, all characters are hard at first.)"
   },
   "answers": {
-    "damage-prioritize": "Dealing the most damage on the party",
-    "tank-prioritize": "Staying alive until the end of a difficult raid",
-    "support-only": "Saving teammates from their mistakes and giving important buffs",
-    "playstyle-neutral": "No class role preference / Unsure",
+    "neutralgoal": "I have no preference/I don't know.",
 
-    "nuke-prioritize": "Strongly prefer nuking mobs through one or two core skills",
-    "nuke-prefer": "Prefer nuking mobs through one or two core skills",
-    "const-prioritize": "Strongly prefer balanced damage throughout my skills",
-    "const-prefer": "Prefer balanced damage throughout my skills",
-    "cycle-neutral": "I have no preference / Unsure",
+    "male-only": "I strongly prefer a male character.",
+    "male-prioritize": "I prefer a male character, but it's not essential.",
+    "female-only": "I strongly prefer a female character.",
+    "female-prioritize": "I prefer a female character, but it's not essential.",
+    "neutral-gender": "I don't lean either way. Recommend me a character without considering this.",
 
-    "backhead-prioritize": "That sounds amazing, prioritize classes with the back/head mechanic",
-    "backhead-prefer": "I would prefer classes that have this mechanic",
-    "hitmaster-prioritize": "That sounds horrible, prioritize classes withOUT the back/head mechanic",
-    "hitmaster-prefer": "I would prefer classes without this mechanic",
-    "backhead-neutral": "No back/head preference / Unsure",
+    "neutral-dlc": "Absolutely, I am willing to buy DLC if the character fits my playstyle.",
+    "base-prioritize": "I'm ok with it, but please prioritize non-DLC characters.",
+    "base-only": "Please prioritize characters in the base game. I don't want to buy DLC.",
+    "dlc-only": "I actually want to try a character in the DLC, prioritize DLC characters.",
 
-    "range-midlong-prioritize": "Strongly prefer a class with mid-long range",
-    "range-midlong-prefer": "Prefer a class with mid-long range",
-    "range-midshort-prioritize": "Strongly prefer a class with short-mid range",
-    "range-midshort-prefer": "Prefer a class with short-mid range",
-    "range-neutral": "I do not have a range preference /Unsure",
+    "combo-prioritize": "Landing flashy, high damage combos.",
+    "movement-prioritize": "Dashing in and out of range of my opponent's moves.",
+    "aggression-prioritize": "Getting aggressive at my opponent.",
+    "defense-prioritize": "Defending/parrying my opponent's attacks.",
+    "versatilegoal-prioritize": "I prioritize an all-rounder character that has balanced everything.",
 
-    "counter-prioritize": "I think a good counter move is the most important trait",
-    "counter-prefer": "I prefer classes with good counter moves",
-    "counter-neutral": "I prefer other traits over good counter moves / Unsure",
+    "combo-prefer": "Landing flashy, high damage combos.",
+    "movement-prefer": "Dashing in and out of range of my opponent's moves.",
+    "aggression-prefer": "Getting aggressively close to my opponent.",
+    "defense-prefer": "Defending/parrying my opponent's attacks.",
+    "versatilegoal-prefer": "I prefer an all-rounder character that has balanced everything.",
 
-    "stagger-prioritize": "I think a high stagger skillset is the most important trait",
-    "stagger-prefer": "I prefer classes with outstanding stagger",
-    "stagger-neutral": "I prefer other traits over high stagger / Unsure",
+    "whiff-punish-prioritize": "Attacking when the opponent makes a mistake and misses a move.",
+    "counterhit-prioritize": "Landing a counterhit when my opponent tries to attack.",
+    "mixup-prioritize": "Aggressive mixups(50/50) that will keep them guessing.",
+    "grab-prioritize": "Grappling and throwing - they can't break them all.",
+    "plus-frame-prioritize": "Pressuring with plus frame moves (big/slower moves that stagger the opponent).",
+    "poke-prioritize": "Poking down the opponent down with a series of low risk moves.",
+    "versatileoffense-prioritize": "I would prioritize a character that has balanced attack options for all.",
 
-    "survivability-high-prioritize": "Strongly prefer a class with high survivability",
-    "survivability-high-prefer": "Prefer a class with high survivability",
-    "survivability-midhigh-prioritize": "Strongly prefer a class with at least some extra survivability",
-    "survivability-midhigh-prefer": "Prefer a class with at least some extra survivability",
-    "survivability-neutral": "Please prioritize other traits over survivability / Unsure",
+    "whiff-punish-prefer": "Attacking when the opponent makes a mistake and misses a move.",
+    "counterhit-prefer": "Landing a counterhit when my opponent tries to attack.",
+    "mixup-prefer": "Aggressive mixups(50/50) that will keep them guessing.",
+    "grab-prefer": "Grappling and throwing - they can't break them all.",
+    "plus-frame-prefer": "Pressuring with plus frame moves (big/slower moves that stagger the opponent).",
+    "poke-prefer": "Poking down the opponent down with a series of low risk moves.",
+    "versatileoffense-prefer": "I would prefer a character that has balanced attack options for all.",
 
-    "mobility-high-prioritize": "Strongly prefer a class with high mobility",
-    "mobility-midhigh-prioritize": "Strongly prefer a class with at least decent mobility",
-    "mobility-low-prioritize": "Strongly prefer a less mobile class",
-    "mobility-neutral": "Please prioritize other traits over mobility / Unsure",
+    "aggressiveoki-prefer": "I aggressively dash in, looking for a followup mixup.",
+    "defensiveoki-prefer": "I take it safe and reset to a neutral position.",
+    "versatileoki-prefer": "I would like a character that benefits from both options equally.",
+    "neutral-oki": "I don't have an opinion. Please don't take okizeme situations into consideration.",
 
-    "charge-prioritize": "I would love that, please prioritize classes with a charge/delay mechanic in skills",
-    "charge-prefer": "I would prefer classes with a charge/delay mechanic in skills",
-    "chargeless-prioritize": "I would hate that, please prioritize classes withOUT a charge/delay mechanic in skills",
-    "chargeless-prefer": "I would prefer classes withOUT a charge/delay mechanic in skills",
-    "charge-neutral": "Please priortize other traits over charged skills / Unsure",
+    "setups-important-prioritize": "Absolutely! Please try to recommend me a character that focuses on setups.",
+    "setups-important-prefer": "I prefer setups, but it doesn't take priority over other options.",
+    "setups-unimportant-prioritize": "Please try to recommend me characters that don't have setups as their focus.",
+    "setups-unimportant-prefer": "I prefer no setups, but I am willing to play a setup oriented character.",
+    "neutral-setups": "I don't really have an opinion/I'm not familiar with setups",
 
-    "male-only": "Only male classes",
-    "male-prefer": "Prefer male classes",
-    "female-only": "Only female classes",
-    "female-prefer": "Prefer female classes",
-    "gender-neutral": "No preference on gender / Unsure",
+    "stance-heavy-prioritize": "Please try to recommend me a character that focuses on stances.",
+    "stance-heavy-prefer": "I prefer having stances, but it doesn't take priority over other options.",
+    "stance-light-prioritize": "Please try to recommend me characters that don't have a big focus on stances.",
+    "stance-light-prefer": "I prefer characters don't focus on stances, but I am willing to play a character that do.",
+    "neutral-stance": "I don't really have an opinion. Please don't take stances into consideration.",
 
-    "tier-high-prioritize": "Tier 1 classes - top rated characters, high raid demand",
-    "tier-mid-prioritize": "Tier 2~4 - great characters that may have some flaws",
-    "tier-low-prioritize": "Tier 5 - characters with glaring flaws that may impair the ability to find a raid party",
-    "tier-midhigh-prioritize": "Tier 1~3 - no lower tiers",
-    "tier-midlow-prioritize": "Tier 3~5 - no higher tiers",
-    "tier-neutral": "No preference on tiers / Unsure",
+    "movetier-high-prioritize": "Yes, I think having good movement is very important",
+    "movetier-midhigh-prefer": "A little, I would enjoy a character with good movement.",
+    "neutral-movetier": "It's not something I feel strongly about, please don't take movement into consideration.",
 
-    "difficulty-high-prioritize": "Recommend me classes with challenging gameplay",
-    "difficulty-low-prioritize": "Recommend me easier classes to start getting used to Lost Ark with",
-    "difficulty-midhigh-prioritize": "Recommend me a class that isn't too easy/simple",
-    "difficulty-midlow-prioritize": "Recommend me a class that isn't too challenging/complicated",
-    "difficulty-neutral": "I don't have a strong preference on class difficulty / Unsure",
+    "evasion-high-prioritize": "It's very important, please prioritize a character with high evasion",
+    "evasion-midhigh-prefer": "A little, so I would enjoy a character with high evasion.",
+    "neutral-evasion": "I don't really have an opinion. Please don't take built-in evasion into consideration.",
 
-    "global-only": "Only recommend me classes currently available globally",
-    "global-prioritize": "I would like an emphasis on classes currently available globally",
-    "global-neutral": "Yes, recommend me all potential classes / I am on the Korea server"
+    "2d-prioritize": "I would enjoy playing characters with a Ki gauge/projectiles.",
+    "3d-only": "Only recommend characters with NO Ki gauge/projectiles.",
+    "3d-prioritize": "I prefer NO Ki gauge/projectiles.",
+    "neutral-crossover": "Please don't take Ki into consideration/I have no preference",
+
+    "tier-high-prioritize": "Tier 1(OP characters, top rated characters)",
+    "tier-mid-prioritize": "Tier 2~4(good characters with some flaws)",
+    "tier-low-prioritize": "Tier 5(characters with noticeable flaws)",
+    "tier-midhigh-prioritize": "Tier 1~3(no low tiers)",
+    "tier-midlow-prioritize": "Tier 3~5(no high tiers)",
+    "neutral-tier": "I don't have a strong opinion on tiers, please don't take it into consideration.",
+
+    "gameplan-level-low-prioritize": "Recommend easier characters that I can start learning Tekken with.",
+    "gameplan-level-high-prioritize": "Recommend harder characters that have challenging execution and gameplan.",
+    "gameplan-level-mid-prioritize": "Recommend characters that isn't too challenging, but not necessarily easy.",
+    "neutral-gameplan-level": "I don't have a strong preference on character difficulty.",
+    "beginner-friendly-only": "I'm trying out fighting games for the first time. Choose a \"beginner friendly\"character for me.\nI understand this is subjective."
   },
   "results": {
     "instructions": "Click on each character to view more details.\nClick on View All for all characters now ordered by your preference"
   },
-  "char1": {
-    "shortname": "char1",
-    "name": "Character 1",
-    "flavortext": "Character 1 is a strong dps that handles a big chunk of the party's damage.\nHe has a great skillset that provides consistent damage output, as well as amazing counters and stagger metrics.\nWhile he is short-mid range, he has a variety of mobility skills that let him close the gap fairly easily.\nBut he does have lower health and defense, and combined with the fact that he works best in the short range, a mistake could be fatal.\nAdditionally, to reach his full damage potential, he needs to hit back attacks, which makes him a difficult character to work with, and as a result, makes him a middling tier character.",
-    "traits": "#dps #short/midrange #stagger #counter #back_attack #difficulty_high"
+  "Alisa Bosconovitch": {
+    "shortname": "Alisa",
+    "name": "Alisa Bosconovitch",
+    "flavortext": "Alisa has great movement and poke strings, so it is great for fighting in the mid range and look for a whiff punish.\nShe excels at using her fast pokes to gain a health advantage and leveraging it as the round progresses. While her pokes are great, you will see more value from a well-timed, quick poke than spamming it all the time.\nHer stance, destroyer form, is a highly offensive stance that prevents Alisa from ducking or dashing. However, she can fly around with chainsaw powered attacks that are advantageous on block.\nAlisa's main gameplan is on the simple side, but if you want to utilize the chainsaw form heavily, there may be more to memorize.\nShe does fall behind similar characters in terms of damage and combo potential so she is rarer in a tournament setting.\nUltimately, Alisa is a great, beginner friendly character for all the robo-girl enjoyers!",
+    "recommended": "#Chanel, #Cuddle Core, #AO",
+    "traits": "#robo_girl #movement #poke #defense #chainsaw_setups #learn_tekken #beginner_friendly",
+    "overview": "https://youtu.be/MHmpW_t1msg",
+    "guide": "https://youtu.be/aPAJDYlia9g"
   },
-  "char2": {
-    "shortname": "Jay Kay",
-    "name": "Jamiroquai",
-    "flavortext": "Everything is good and brown, I'm here again with a sunshine smile upon my face\nMy friends are close at hand and all my inhibitions have disappeared without a trace\nI'm glad, oh that I found somebody who I can rely on - this is the return of the space cowboy, interplanetary good vibe zone",
-    "traits": "#Jamiroquai #The Return of the Space Cowboy"
+  "Akuma / Gouki": {
+    "shortname": "Akuma",
+    "name": "Akuma / Gouki",
+    "flavortext": "As a guest character from Street Fighter, Akuma looks and plays a bit differently, primarily characterized by his active jumping.\nUnlike other characters he does not have a rage drive, but he has a special 'meter' system which he uses for terrible terrible damage.\nAkuma's various strings from crouchjab and d+3 are very effective at dismantling the opponent's guard, and he also has a powerful d+4 that knocks down characters.\nWhile his damage potential alone lets him be a top-tier character, his gameplan and combo is hard to execute, as well as being more similar to Street Figher than Tekken.\nUltimately, because of his differences, Akuma is not recommended to a new player unless they are well-versed in Street Figher already.",
+    "recommended": "#Awais Honey #K2RO #SuperAkouma",
+    "traits": "#combo #mixup #aggressive #keepout #jumping #ki_bar #top_tier_with_ki",
+    "overview": "https://youtu.be/xhu662tqCzU",
+    "guide": "https://youtu.be/HKTj8UsBm1w"
   },
-  "char3": {
-    "shortname": "MCR",
-    "name": "My Chemical Romance",
-    "flavortext": "Sometimes I get the feeling she's watching over me, and other times I feel like I should go\nAnd through it all ,the rise and fall, the bodies in the streets, and when you're gon we want you all to know",
-    "traits": "#My Chemical Romance #MCR #Welcome to the Black Parade"
+  "Anna Williams": {
+    "shortname": "Anna",
+    "name": "Anna Williams",
+    "flavortext": "Thanks to her amazing mixup potential, Anna can go 50/50 against anyone. Her powerful crouch mixups threaten enemies even from the midrange.\nAnna's high combo damage and buffs on key moves lets her trade blows with most of the cast and come out on top.\nShe has amazing, spammable combo starter moves as well as great poking mixups that let her pressure the opponent infinitely.\nAnna has great counterhit moves in all ranges, and has a lot of setup potential through her Chaos Stance.\nAnna does have weaker punish and tracking compared to other characters, which does bring her down a peg in the highest level.\nUltimately, Anna's simple gameplan and commands make her a great character to start learning Tekken with.",
+    "recommended": "#Fran #Nameless King",
+    "traits": "#aggression #mixup #combo #poke #Chaos_Stance #learn_tekken",
+    "overview": "https://youtu.be/UQ1ZNNqXHW0",
+    "guide": "https://youtu.be/b5atAkkBvNc"
   },
-  "char4": {
-    "shortname": "Em",
-    "name": "Eminem",
-    "flavortext": "Nowadays everbody wanna talk like they got something to say, but nothing comes out when they move their lips,\njust a bunch of gibberish, and motherfuckers act like they forgot about Dre",
-    "traits": "#Eminem #Dr Dre #Forgot about Dre"
+  "Armor King": {
+    "shortname": "AK",
+    "name": "Armor King",
+    "flavortext": "Damage, utility, and a cool design? Armor King truly has it all. The recent buffs have benefitted Armor King in this damage focused meta.\nArmor King has high combo damage and wall-carry potential, which are exacerbated in maps where you can break floors/walls. He has great punishes, panic moves, and moves that combo on counter hits.\nArmor King's variety of grabs make sure the enemy crouches often, which he can take advantage of with his many safe mid options.\nIt is to be noted, however, that all of this only come into play if you have great movement - Armor King's aggression potential relies on wavedashing, and he lacks low attacks that knocks down the opponent.\nUltimately, Armor King is definitely a great character with strong combos and grabs as well as being cool incarnate, but his difficult gameplan makes him difficult to recommend to new players.",
+    "recommended": "#JDCR #Hakaioh #Poltan",
+    "traits": "#combo #chain_grab #counterhit #all-rounder #king_of_cool #wavedash #wrestling #advanced",
+    "overview": "https://youtu.be/1lg-0ffZNmA",
+    "guide": "https://youtu.be/4l18RdV5uWQ"
+  },
+  "Asuka Kazama": {
+    "shortname": "Asuka",
+    "name": "Asuka Kazama",
+    "flavortext": "Asuka is a character modeled after 'offense is the best defense'. Her attacks may put you in a disadvantageous situation, but her parries and panic moves are amazing and quickly let you take back the tempo again.\nHer never-ending stream of attacks contain many combo starters, and Asuka has a great, well known combo setup with her unblockable move.\nAdditionally, Asuka has amazing damage potential in her rage drive and special mount, which gives her some tools for comebacks.\nUnfortunately, her poking moves aren't amazing and movement is relatively slow, meaning she has a limit to playing a reactive style.\nHer defensive attacks and easy commands mean Asuka is often recommended to new players.",
+    "recommended": "#SLine #Fergus #Dimeback",
+    "traits": "#aggression #defense #evasion #setups #parry #back3 #learn_tekken #beginner_friendly",
+    "overview": "https://youtu.be/JygnSvomO8I",
+    "guide": "https://youtu.be/8BdhgbXuaEI"
+  },
+  "Bob (Robert Richards)": {
+    "shortname": "Bob",
+    "name": "Bob (Robert Richards)",
+    "flavortext": "Bob has everything - long reach, high damage, and great movement. His basic attacks are long and strong, which makes it easy for him to keep the enemy at bay.\nBob has many strings that let him get a mental advantage over enemies over whether to complete them. He also has amazing comeback potential through a strong mixup of hellsweep and mid.\nSuch positive traits are amplified at the wall, especially thanks to Bob's high wall combo damage. In best(worst?) case scenarios, Bob can carry the opponent to the wall and end the game there in the blink of an eye.\nBob is definitely a strong, fun, exciting character to play, but his pickrate does not reflect that, presumably due to his bulkier body.\nUltimately, Bob has a simpler gameplan but with some execution barriers, so he is recommended to players who are more used to the Tekken system.",
+    "recommended": "Recommend",
+    "traits": "",
+    "overview": "",
+    "guide": ""
   }
 }

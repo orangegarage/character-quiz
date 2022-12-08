@@ -138,10 +138,11 @@ export let questions = [
     id: 14,
     question: 'q14',
     answers: [
+      'beginner-friendly-only',
       'gameplan-level-low-prioritize',
+      'gameplan-level-mid-prioritize',
       'gameplan-level-high-prioritize',
       'neutral-gameplan-level',
-      'beginner-friendly-only',
     ],
   },
 ];
