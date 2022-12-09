@@ -106,7 +106,7 @@ function AllCharacters() {
         <div className="flex justify-center">
           <img src={character.photo} alt={character.name} />
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center font-semibold">
           {t(character.name + '.shortname')}
         </div>
       </li>
