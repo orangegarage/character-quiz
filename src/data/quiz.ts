@@ -104,7 +104,7 @@ export let questions = [
     question: 'q10',
     answers: [
       'movetier-high-prioritize',
-      'movetier-midhigh-prefer',
+      'movetier-midhigh-prioritize',
       'neutral-movetier',
     ],
   },
@@ -113,7 +113,7 @@ export let questions = [
     question: 'q11',
     answers: [
       'evasion-high-prioritize',
-      'evasion-midhigh-prefer',
+      'evasion-midhigh-prioritize',
       'neutral-evasion',
     ],
   },

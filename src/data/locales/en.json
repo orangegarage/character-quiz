@@ -90,13 +90,13 @@
     "stance-light-prefer": "I prefer characters don't focus on stances, but I am willing to play a character that do.",
     "neutral-stance": "I don't really have an opinion. Please don't take stances into consideration.",
 
-    "movetier-high-prioritize": "Yes, I think having good movement is very important",
-    "movetier-midhigh-prefer": "A little, I would enjoy a character with good movement.",
-    "neutral-movetier": "I would like a character that shines in other ways even if their movement may be average/low",
+    "movetier-high-prioritize": "It is important that my character has top class movement",
+    "movetier-midhigh-prioritize": "It is important that my character has at least above average movement.",
+    "neutral-movetier": "If a character shines in other ways, it is ok if their movement is average/below average.",
 
-    "evasion-high-prioritize": "It's very important, please prioritize a character with high evasion",
-    "evasion-midhigh-prefer": "A little, so I would enjoy a character with high evasion.",
-    "neutral-evasion": "I don't really have an opinion. Please don't take built-in evasion into consideration.",
+    "evasion-high-prioritize": "It's very important that my character has high evasion",
+    "evasion-midhigh-prioritize": "It is important that my character has at least above average evasion.",
+    "neutral-evasion": "If a character shines in other ways, it is ok if their evasion is average/below average",
 
     "2d-prioritize": "I would enjoy playing characters with a Ki gauge/projectiles.",
     "3d-only": "Only recommend characters with NO Ki gauge/projectiles.",
@@ -149,7 +149,7 @@
   "Armor King": {
     "shortname": "AK",
     "name": "Armor King",
-    "flavortext": "Damage, utility, and a cool design? Armor King truly has it all. The recent buffs have benefitted Armor King in this damage focused meta.\nArmor King has high combo damage and wall-carry potential, which are exacerbated in maps where you can break floors/walls. He has great punishes, panic moves, and moves that combo on counter hits.\nArmor King's variety of grabs make sure the enemy crouches often, which he can take advantage of with his many safe mid options.\nIt is to be noted, however, that all of this only come into play if you have great movement - Armor King's aggression potential relies on wavedashing, and he lacks low attacks that knocks down the opponent.\nUltimately, Armor King is definitely a great character with strong combos and grabs as well as being cool incarnate, but his difficult gameplan makes him difficult to recommend to new players.",
+    "flavortext": "Damage, utility, and a cool design? Armor King truly has it all. The recent buffs have benefitted Armor King in this damage focused meta.\nArmor King has high combo damage and wall-carry potential, which are heightened in maps where you can break floors/walls. He has great punishes, panic moves, and moves that combo on counter hits.\nArmor King's variety of grabs make sure the enemy crouches often, which he can take advantage of with his many safe mid options.\nIt is to be noted, however, that all of this only come into play if you have great movement - Armor King's aggression potential relies on wavedashing, and he lacks low attacks that knocks down the opponent.\nUltimately, Armor King is definitely a great character with strong combos and grabs as well as being cool incarnate, but his difficult gameplan makes him more of an advanced character.",
     "recommended": "Recommended Players: #JDCR #Hakaioh #Poltan",
     "traits": "#combo #chain_grab #counterhit #all-rounder #king_of_cool #wavedash #wrestling #advanced",
     "overview": "https://youtu.be/1lg-0ffZNmA",
@@ -177,9 +177,396 @@
     "shortname": "Bryan",
     "name": "Bryan Fury",
     "flavortext": "With his high damage moves and combos combined with an unblockable taunt, Bryan definitely made every Tekken fan salivate a little at the thought of playing him with precision. Bryan also happens to be the symbolic character of Knee, the best Tekken player in the world\nBryan's moves generally pack a punch, and his decent wall carry makes him lethal. Bryan's taunt disable's the opponent's guard and lets him chain together a basically unblockable attack.\nThis makes Bryan especially strong in situations where he has a frame advantage - such as oki situations or after a successful punish, where he can mix up the opponent with his high damage moves.\nHowever, these situations are hard to create because Bryan's movement can be hard to execute, and there are no gimmicky, abusable moves, and his main attacks are relatively slow.\nWhile Bryan doesn't have particularly difficult execution and a easy to understand gameplan, the gameplan is hard to actually get right, making him frustrating if you are just starting to play the game.",
-    "recommended": "Recommended Player: #Knee #JimmyJTran(Mr.Naps) #YSEMulti",
+    "recommended": "Recommended Players: #Knee #JimmyJTran(Mr.Naps) #YSEMulti",
     "traits": "#Tekken_is_Knee #counterhit #aggression #Taunt_Jet_Upper #plus_frames #difficulty_mid",
     "overview": "https://youtu.be/hCofbHccJAc",
     "guide": "https://youtu.be/xitzRnb1QF8"
+  },
+  "Claudio Serafino": {
+    "shortname": "Claudio",
+    "name": "Claudio Serafino",
+    "flavortext": "Claudio has a quite interesting gameplan via his Ira (WR+2), a very strong high move that gives you a maassive advantage even when blocked.\nBecause of the high guardback level, the opponent will find themselves with their back to the wall after blocking just a few Iras. While most of the cast mixup the mids and lows, Claudio mixes up the highs and mids.\nClaudio has a variety of great mids to compliment this, most of which are even stronger at the wall. His hopkick has ome of the best hitboxes in the game, which lets him take advantage of his opponents' haphazard attempts to take back control.\nClaudio's Starburst form unlocks more damaging moves, letting him put on even more pressure. However, he does have weaker lows, and can find difficult to play out the game if his hopkicks and punishable mids are blocked.\nUltimately, Claudio is a great character for new players thanks to his easy combos and simple gameplan.",
+    "recommended": "Recommended Players: #Mulgold #Shadow20z",
+    "traits": "#Ira #aggression #movement #keepout #hopkick #difficulty_low #beginner_friendly",
+    "overview": "",
+    "guide": "https://youtu.be/Tc6k9dYfu10"
+  },
+  "Devil Jin": {
+    "shortname": "Devil Jin",
+    "name": "Devil Jin",
+    "flavortext": "Devil Jin is the most well-balanced Mishima of the trio (Heihachi, Kazuya, Devil Jin).\nThanks to his amazing highs, strong counter hit and mixup options, Devil Jin can play well from ahead or behind. Unfortunately due to recent patches, his mixup efficiency is a lot weaker with more risk and less reward. Combined with his difficult execution requirement, these are some reasons we see less Devil Jin in tournaments today.\nEven so, Devil Jin has a great pressure from wavedash and plenty of tools to dish out damage.\nUltimately, because of the execution barrier and lower returns, Devil Jin is not recommended for players new to Tekken.",
+    "recommended": "Recommended Players: #Qudans #Knee",
+    "traits": "#Electric_Wind_God_Fist #Wavedash #Hellsweep #mixup #aggression #difficulty_high",
+    "overview": "",
+    "guide": "https://youtu.be/y0cslboc1tY"
+  },
+  "Eddy Gordo": {
+    "shortname": "Eddy",
+    "name": "Eddy Gordo",
+    "flavortext": "Eddy is a character that can really take advantage of the opponent's (lack of) matchup knowledge. He has traditionally shined in the hands of the most inexperienced players mashing against equally inexperienced opponents.\nHis moves with long reach and confusing stances, with mixups involving string after string wears down your opponent both mentallly and physically.\nEddy has great moves that transition him into his stances in an advantageous position, rewarding him for pressing aggressively.\nHis strong mixups and great keepaway moves make them easy options to use. However, Eddy does struggle with a lack of good sidestep, and many of his setups will not work against an experienced opponent, which make it a struggle to actually learn Tekken with Eddy.\nTherefore, Eddy is recommended to more experienced players looking for a challenge, or completely new players that just want a slight dip into what Tekken is like",
+    "recommended": "Recommended Players: #JeonDding",
+    "traits": "#lab_me_or_die #capoeira #stances #backdashing #mixups #strings #poke #setups #difficulty_high #beginner_friendly",
+    "overview": "",
+    "guide": "https://youtu.be/u0SbPN_alcI"
+  },
+  "Eliza": {
+    "shortname": "Eliza",
+    "name": "Eliza",
+    "flavortext": "Although she is a Tekken original character, Eliza actually has a ki-gauge. Eliza focuses on using her divekick pressure to lock in opponents.\nBecause of how scary it is, opponents who are not familiar with Eliza often end up losing after blocking for the entire round. Eliza also has some great combos on counter hits and find success in poking down opponents through string and divekick pressure.\nCompared to Geese and Akuma, Eliza has a quicker meter fill rate, which lets her freely use the powerful meter based moves in her arsenal. She is still a very difficult character that requires a lot of mechanical prowess and gameplay knowledge to play well, however, as most of her moves don't have a lot of damage.\nFor the mentioned reasons, Eliza is ultimately recommended to experienced players that are looking for a vampire character with flashy combos, and is not recommended for beginners.",
+    "recommended": "Recommended Players: #Chanel #Joonya20z",
+    "traits": "#lab_me_or_die #vampire #divekick #metered #combo #pressure #movement #aggressive #strings #poke #difficulty_high",
+    "overview": "",
+    "guide": "https://youtu.be/jbXywistqnw"
+  },
+  "Fahkumram": {
+    "shortname": "Fahkumram",
+    "name": "Fahkumram",
+    "flavortext": "With his long legs and muscular physique, Fahkumram's fight style is very fitting with his looks, as he abuses his long reach for explosive damage.\nFahkumram aggravates his opponents through his long pokes, and suddenly comes in with a meaty 3+4 counterhit - unfortunately, a lot of his other tools have been nerfed over time so he is not a top tier pick anymore.\nFahkumram thrives off counterhits, but it is difficult to connect with counterhit moves with great reward, so he has become more reliant on whiff punishing, poking, and mixing up opponents with his strings.\nOverall, Fahkumram still sees some potential thanks to his satisfying hit effect and long reach, and can really benefit from an aggressive gameplan.\nWhile his gameplay and reach may be fitting for a newer player, it is to be noted that his combos may be a little hard if you are completely new to the game.",
+    "recommended": "Recommended Players: #Mulgold #Rangchu #Infested",
+    "traits": "#aggressive #whiff-punish #daddy_long_legs #muay_thai #3+4 #poke #strings #pressure #difficulty_mid",
+    "overview": "",
+    "guide": "https://youtu.be/0PqW2MAC5Ag"
+  },
+  "Feng Wei": {
+    "shortname": "Feng",
+    "name": "Feng Wei",
+    "flavortext": "Feng is an amazing, well-rounded character that excels in everything. As a testament to this, there are many ways you can play Feng.\nSome players play him defensively, poking down opponents, and fish for a big hit. Others put more weight on his back-turn or kenpo stances, forcing their opponents into a deadly mixup.\nFeng has moves that come with auto parrying which naturally integrate defense into his offense, and has amazing returns on his counterhit moves. Not only that, his combos have great damage and decent wall carry.\nFeng has received quite a few nerfs but he is still a great character that has a simple, easy to execute gameplan. Ultimately, this makes him a great character for beginners to start learning Tekken with.",
+    "recommended": "Recommended Players: #Knee #Hao",
+    "traits": "#well-rounded #parries #pokes #kenpo #martial_arts #difficulty_low #beginner_friendly",
+    "overview": "",
+    "guide": "https://youtu.be/7ScjQDe9LqY"
+  },
+  "Gigas": {
+    "shortname": "Gigas",
+    "name": "Gigas",
+    "flavortext": "Gigas is a big red hulk and he plays like one too, covering his slow movement with heavy hitting punches and long reach.\nHis combo damage is great especially when you consider how simple it can be, and has a decent low option that quickly racks up damage.\nGigas' goliath stance lets him get in a threatening mixup as well as push the opponent to the wall, but he does struggle in the movement and counterhit department, making him vulnerable in close combat situations.\nOverall, Gigas is a honest, easy to learn defensive character that beginners can pick up and learn Tekken easily with.",
+    "recommended": "Recommended Players: #DoToRing #Youjinboy",
+    "traits": "#defense #long_arms #1,2 #easy_combo #keepout #pokes #strings #difficulty_low #beginner_friendly",
+    "overview": "",
+    "guide": "https://youtu.be/7IiDM67MgVA"
+  },
+  "Geese Howard": {
+    "shortname": "Geese",
+    "name": "Geesse Howard",
+    "flavortext": "Geese Howard is another 2D game guest character like Akuma - but he does seem to have integrated into the Tekken system a better than the latter. Still, he relies heavily on meter management and has quite a few jump based options that may feel alien to the traditional Tekken player.\nDespite multiple nerfs, Geese still has flashy, high damage combos, rewarding parries, and a nice toolkit all around. He doesn't have a sweeping low, but that doesn't stop Geese from doing things that you may need to clutch out the victory.\nDespite this, because his mechanics are decently foreign, he isn't recommended to new players trying to learn Tekken, but if you are used to 2D fighters, his execution demand is actually not as scary as it seems.",
+    "recommended": "Recommended Players: #Meo-il #Chikurin #Knee",
+    "traits": "#cool_combo #mind_my_meter #aggressive #parry #keepout #gameplay_level_mid",
+    "overview": "",
+    "guide": "https://youtu.be/Wb1BBrewGW8"
+  },
+  "Ganryu": {
+    "shortname": "Ganryu",
+    "name": "Ganryu",
+    "flavortext": "Ganryu is a great character that is held back by his personality and looks.\nDespite those major flaws, in-game Ganryu sees a lot of value via aggression, poking and mixing up opponents in the close range through various attack routes. Even when Ganryu is getting pressured, he has great panic moves to mash and put him back in control.\nGanryu has decent combo damage with wallcarry, and truly shines in the face of his opponents. However, he does struggle getting there as he has poor tools to use in the midrange, so can be playing from the back foot until he lands a combo.\nHis aggressive gameplan is pretty simple in thory, but his short reach can make it difficult to create the situations Ganryu wants.\nUltimately, because he can be frustrating to play until one gets used to his range, Ganryu the easiest for people just starting to play Tekken.",
+    "recommended": "Recommended Players: #Saint #Nameless King",
+    "traits": "#aggression_all_day #mixup #poke #close_range #short_limbs #creepy_or_romantic #difficulty_mid",
+    "overview": "",
+    "guide": "https://youtu.be/7RKjucOh_Dg"
+  },
+  "Heihachi Mishima": {
+    "shortname": "Heihachi",
+    "name": "Heihachi Mishima",
+    "flavortext": "As the oldest surviving Mishima, Heihachi continues to have an image of the strong, experienced final boss fighter in the Tekken series.\nUnlike the other two Mishimas, Heihachi has a weaker hellsweep that does not knock down on hit, which is compensated by a versatile array of strong mids. While he does not have a hellsweep, Heihachi still has a variety of high risk lows thich let him keep the traditional low/mid mixup.\nBut, his mids are so good that Heihachi has a lot of setup potential and lower wavedash reliance.\nHeihachi has a lot of abusable moves, so a player starting with him may be able to achieve some level of success, but his gameplan is still risky and difficult to execute, so beware you may get stuck in a rut.\nBecause of those reasons, Heihachi is recommended for more experienced players.",
+    "recommended": "Recommended Players: #JDCR #supasupa",
+    "traits": "#Electric_Wind_God_Fist #strong_mids #mixup #cool_combos #frame_pressure #difficulty_high",
+    "overview": "",
+    "guide": "https://youtu.be/rdWJgUCS4vk"
+  },
+  "Hwoarang": {
+    "shortname": "Hwoarang",
+    "name": "Hwoarang",
+    "flavortext": "Hwoarang is the only Korean character in Tekken 7, but he has popularity thanks to his cool moveset and looks.\nHwoarang is very good at flowcharting - chaining moves together in an almost mindless way, the possible combinations are endless. His strong low poke and a plethora of plus frame moves can let him take perfect rounds as he forces the opponent to keep guessing when their turn is.\nHis flashy, diverse, strong combos really add to the fun of playing Hwoarang. Hwoarang's launchers have a very good risk/reward ratio and are almost spammable. Additionally, he has great close and mid range tools that can really shake up the opponent.\nUnfortunately, Hwoarang does not benefit from a defensive playstyle as he has weaker punish, and his stances leave him unable to block. As such, Hwoarang may have trouble taking back the tempo after losing it.\nUltimately, Hwoarang is recommended for advanced players as he requires a lot of memorization in addition to a challenging execution barrier.",
+    "recommended": "Recommended Players: #Yeonarang #Rest #Edge(Muse) #KWiss #Speedkicks",
+    "traits": "#taekwondo #combos #mixups #aggressive #pressure #flowcharts #feet #lowhigh #single_player #difficulty_high",
+    "overview": "",
+    "guide": "https://youtu.be/QbJr41KJ90w"
+  },
+  "Jack - 7": {
+    "shortname": "Jack",
+    "name": "Jack-7",
+    "flavortext": "Jack is a big robot that comes with great poke and keepaway as well as a strong low-risk high-reward mixup.\nMost of Jack's moves are long and his decent backdash capabilities let him easily control the distance between his opponent. He also has great low pokes and quick counterhits, which lets him hold his own in close combat. His great strings and pressure building at the wall is amazing, and the game becomes a lot easier as Jack when you land a combo on the opponent and carry them to the wall.\nHowever, Jack does have a larger hitbox which subject him to more damaging combos, and his sidestep is below average, making it hard for him to get out of being pressured, especially at the wall.\nJack also does have a weaker combo game, but the simple, effective combos as well as easy to learn gameplan makes Jack a very good starting character for new Tekken players.",
+    "recommended": "Recommended Players: #Anakin #Saint",
+    "traits": "#long_range #big_hitbox #well_rounded #defense #whiff_punish #poke #mixup #difficulty_low #beginner_friendly",
+    "overview": "",
+    "guide": "https://youtu.be/XkGBPGwEggI"
+  },
+  "Jin Kazama": {
+    "shortname": "Jin",
+    "name": "Jin Kazama",
+    "flavortext": "Jin is kind of a Mishima, but the most glaring difference is that he relies on his safe mid options more than aggressive wavedashing.\nJin can push away enemies and hold them at midrange with his many keepaway pokes, and he can fish for some big damage through his EWHF counter hit.\nJin can play out the game safely and defensively, and take time to whittle down the opponent. Jin has a parry lets him handle opponent's string based attacks with confidence.\nHowever, Jin can struggle in a close range battle against opponents that break through his defensive barrier.\nJin definitely has a lot of tools, but his difficult gameplan can make him challenging for newer players to play.",
+    "recommended": "Recommended Players: #CherryBerryMango #Chikurin #DanielMado",
+    "traits": "#counterhit #defensive #f4 #keepaway #CBCBM #difficulty_high",
+    "overview": "",
+    "guide": "https://youtu.be/zU1tD6Wcy14"
+  },
+  "Josie Rizal": {
+    "shortname": "Josie",
+    "name": "Josie Rizal",
+    "flavortext": "Don't fool for her crying at the start - once the game starts, Josie Rizal does a U turn into a deadly mixup machine that pokes down the opponent with her switch stance and crouch dash.\nJosie forces the opponent to freeze through her string mindgame, then threatens to end them through a switch stance counterhit or a crouchdash mixup. Her combo damage is on the lower side, but it is easy to learn and there is quite a bit of variety.\nAlso, Josie's great, low risk high reward combo starters and amazing punish tools more than make up for it.\nJosie does struggle a little in that she does not have a hard hitting low that knocks down opponents, and can be open to fast counterhits and high crushes.\nJosie does have a little bit of an execution barrier, but her gameplan and combos themselves are easy to execute, so she is a great character to start learning Tekken with.",
+    "recommended": "Recommended Players: #Kagemaru #Gken #Secret #Srasoni #Chickenmaru",
+    "traits": "#mixup #poke #aggression #strings #great_punish #crybaby #kickboxer #difficulty_low",
+    "overview": "",
+    "guide": "https://youtu.be/UPl8IVHvRaQ"
+  },
+  "Julia Chang": {
+    "shortname": "Julia",
+    "name": "Julia Chang",
+    "flavortext": "Julia is a native american activist streamer(???) that boasts some of the best mixups in Tekken.\nHer moves don't have massive damage, but they usually come in strings with massive return potential. When the opponent stays on guard, that leaves Julia open to run up and grab them or start her crouch mixups. Julia has very good counterhit rewards, and her combos have insane wallcarry that lets her take the opponent to the wall from anywhere on the map. At the wall, Julia can take the win by trapping them in her hard hitting mixups.\nJulia's main strings are very good for mindgames, and she has tools for closing the gap from any distance, making her a great aggressive character.\nWhile her gameplan is relatively simple, Julia's moves have some execution barrier, so she isn't necessarily recommended to beginners, but for players who are a little more used to playing Tekken, she is definitely a character to consider picking up.",
+    "recommended": "Recommended Players: #JeonDding #Rangchu #MaD #Mikio #difficulty_mid",
+    "traits": "",
+    "overview": "",
+    "guide": "https://youtu.be/q2RYUBN2nsc"
+  },
+  "Katarina Alvez": {
+    "shortname": "Katarina",
+    "name": "Katarina Alvez",
+    "flavortext": "Katarina has insane damage potential only rivaled by a few other characters.\nHer combos are very strong and have great wall carry, and even the less complicated ones have respectable damage. Katarina amplifies this by having many great counterhit launchers, and even her regular launchers have decent stats on them.\nHowever, her lows do have quite a bit of risk, so it is smart to be wary of spamming too much of it and getting a costly punish.\nOverall, Katarina has a simple, easy to follow gameplan, easy execution, and high damage combos accessible from most of her good moves, so she is definitely a great character to start learning Tekken with.",
+    "recommended": "Recommended Players: #Galgonge #Knee #Genghis Don",
+    "traits": "#aggressive #long_reach #mixup #counterhit #comebacks #female_paul #difficulty_low",
+    "overview": "",
+    "guide": "https://youtu.be/3BuSZSTi1XQ"
+  },
+  "Kazumi Hachijo Mishima": {
+    "shortname": "Kazumi",
+    "name": "Kazumi Hachijo Mishima",
+    "flavortext": "Kazumi can feel very clean and reserved to play.\nHer amazing base movement lets her land meaningful whiff punishes after avoiding the opponent's attacks. Furthermore, Kazumi's basic attacks are very strong, giving her an advantage over other characters in the neutral. Additionally, Kazumi can also get aggressive at times, using her while running moves and fearless warrior stance.\nKazumi sees a lot of value in poking down enemies and stopping their movement with her amazing homing mid, and getting in a nice magic 4 counter for some damage. However, because Kazumi's normal hit launchers are short and risky, the players' defensive abilities are pushed to the limit, and therefore may feel pressure other characters don't have to deal with.\nWhile her execution is on the easy side, her gameplan can get very difficult, which does not make her the easiest character to start playing Tekken with.",
+    "recommended": "Recommended Players: #Ulsan #Arslan Ash",
+    "traits": "#movement #defense #well_rounded #whiff-punish #poke #counterhit #tiger_tamer #difficulty_mid",
+    "overview": "",
+    "guide": "https://youtu.be/7HlZdhAF4-0"
+  },
+  "Kazuya Mishima": {
+    "shortname": "Kazuya",
+    "name": "Kazuya Mishima",
+    "flavortext": "Kazuya Mishima is one of the most iconic characters in Tekken.\nAs the gold standard Mishima, his powerful mixups that stem through wavedashing incentivize aggressive play, but he can also be played defensively thanks to his amazing punish potential.\nKazuya can trade his rage to turn into devil mode, in which the EWGF turns into a mid, creating much stronger mixup potential to stage a comeback.\nKazuya is a very popular character that many people choose to play when they start Tekken. However, because he requires a certain level of mechanical skill to properly show his potential, he is not a character recommended for beginners.",
+    "recommended": "Recommended Players: #Knee #BoaLuvb #Ryan Hart",
+    "traits": "#pressure #aggression #combo #mixup #whiff-punish #EWGF #difficulty_high",
+    "overview": "",
+    "guide": "https://youtu.be/tmhA8Yj-ILw"
+  },
+  "King": {
+    "shortname": "King",
+    "name": "King",
+    "flavortext": "Aside from his jaguar mask, King is known for his strong grapple options, but his base moves aren't bad at all.\nMany King players look for a mid range whiff punish, or a sudden switch to a close range fight spearheaded by a pushing counter or a throw. King's close range options aren't bad as he does have some quick counterhit options.\nAs King's chain throws can really chunk down health, King always has comeback potential no matter how low his health may be. Because many of his throws start with the same motion, everyone is subjected to King's grapple mindgame.\nHowever, if the opponent breaks throws consistantly, King really struggles to play out the rest of the game, especially because most of his mids put him in a disadvantage when guarded.\nWhile King's chain throws are very strong, especially to newcomers, a lot of them can be difficult to memorize and execute.\nOverall, King is a solid character choice recommended for players more experienced to the Tekken system",
+    "recommended": "Recommended Players: #Hakaioh #TaiHeiYo #Lil Majin #Poltan",
+    "traits": "#throws #mixup #well_rounded #aggressive #comebacks #rolling_cradle #difficulty_mid",
+    "overview": "",
+    "guide": "https://youtu.be/5Bl3bjqAzdo"
+  },
+  "Kuma / Panda": {
+    "shortname": "Bears",
+    "name": "Kuma / Panda",
+    "flavortext": "",
+    "recommended": "Recommended Players: #Rangchu",
+    "traits": "",
+    "overview": "",
+    "guide": "https://youtu.be/57vqIlJL03g"
+  },
+  "Kunimitsu": {
+    "shortname": "Kunimitsu",
+    "name": "Kunimitsu",
+    "flavortext": "",
+    "recommended": "Recommended Players: #Chanel",
+    "traits": "",
+    "overview": "",
+    "guide": "https://youtu.be/Fo_07cHbol4"
+  },
+  "Lars Alexandersson": {
+    "shortname": "Lars",
+    "name": "Lars Alexandersson",
+    "flavortext": "",
+    "recommended": "Recommended Players: #Binchang #Nobi #CherryBerryMango",
+    "traits": "",
+    "overview": "",
+    "guide": "https://youtu.be/qrjyTtoxqgQ"
+  },
+  "Leroy Smith": {
+    "shortname": "Leroy",
+    "name": "Leroy Smith",
+    "flavortext": "",
+    "recommended": "Recommended Players: #Breadman #GGoolbogicMaster",
+    "traits": "",
+    "overview": "",
+    "guide": "https://youtu.be/bTbatLeJHRw"
+  },
+  "Lee Chaolan": {
+    "shortname": "Lee",
+    "name": "Lee Chaolan",
+    "flavortext": "",
+    "recommended": "Recommended Players: #ImYourFather #FightingGM",
+    "traits": "",
+    "overview": "",
+    "guide": "https://youtu.be/GToeDQNS92Q"
+  },
+  "Lei Wulong": {
+    "shortname": "Lei",
+    "name": "Lei Wulong",
+    "flavortext": "",
+    "recommended": "Recommended Players: #Jokre #WulongMomentum #PepperBeef2Spicy #Suiken",
+    "traits": "",
+    "overview": "",
+    "guide": "https://youtu.be/yS_vfzBXHY8"
+  },
+  "Leo Kliesen": {
+    "shortname": "Leo",
+    "name": "Leo Kliesen",
+    "flavortext": "",
+    "recommended": "Recommended Players: #Gura #Masa #WayGamble #AyoRichie",
+    "traits": "",
+    "overview": "",
+    "guide": "https://youtu.be/AKYIseE0exw"
+  },
+  "Lidia Sobieska": {
+    "shortname": "Lidia",
+    "name": "Lidia Sobieska",
+    "flavortext": "",
+    "recommended": "Recommended Players: #Book",
+    "traits": "",
+    "overview": "",
+    "guide": "https://youtu.be/-f4iT3LAA_M"
+  },
+  "Lili (Emile de Rochefort)": {
+    "shortname": "Lili",
+    "name": "Lili (Emile de Rochefort)",
+    "flavortext": "",
+    "recommended": "Recommended Players: #Gura #Shine",
+    "traits": "",
+    "overview": "",
+    "guide": "https://youtu.be/zL958UjHD78"
+  },
+  "Lucky Chloe": {
+    "shortname": "Lucky",
+    "name": "Lucky Chloe",
+    "flavortext": "",
+    "recommended": "Recommended Players: #JeonDding #Kaizur #Fusion",
+    "traits": "",
+    "overview": "",
+    "guide": "https://youtu.be/oZt1OoKAbbs"
+  },
+  "Marshall Law": {
+    "shortname": "Law",
+    "name": "Marshall Law",
+    "flavortext": "",
+    "recommended": "Recommended Players: #Nameless King #Double",
+    "traits": "",
+    "overview": "",
+    "guide": "https://youtu.be/_4k_87I_L0U"
+  },
+  "Master Raven": {
+    "shortname": "Raven",
+    "name": "Master Raven",
+    "flavortext": "",
+    "recommended": "Recommended Players: #GoAttack #Tabibito #Pinya",
+    "traits": "",
+    "overview": "",
+    "guide": "https://youtu.be/HPVM08p8GS4"
+  },
+  "Craig Marduk": {
+    "shortname": "Marduk",
+    "name": "Craig Marduk",
+    "flavortext": "",
+    "recommended": "Recommended Players: #Knee #DoToRing #The Jon #Joey Fury #Youjinboy",
+    "traits": "",
+    "overview": "",
+    "guide": "https://youtu.be/60izAVEjxiQ"
+  },
+  "Miguel Caballero Rojo": {
+    "shortname": "Miguel",
+    "name": "Miguel Caballero Rojo",
+    "flavortext": "",
+    "recommended": "Recommended Players: #Rancafe #Sephiblack #Glaciating",
+    "traits": "",
+    "overview": "",
+    "guide": "https://youtu.be/qKm1JFm_fF4"
+  },
+  "Negan": {
+    "shortname": "Negan",
+    "name": "Negan",
+    "flavortext": "",
+    "recommended": "Recommended Players: #Knee #Infested",
+    "traits": "",
+    "overview": "",
+    "guide": "https://youtu.be/eVBnZ--4H44"
+  },
+  "Nina Williams": {
+    "shortname": "Nina",
+    "name": "Nina Williams",
+    "flavortext": "",
+    "recommended": "Recommended Players: #NinaAssasin #OnlyPractice #Victim_Of_Ritual",
+    "traits": "",
+    "overview": "",
+    "guide": "https://youtu.be/8blj9RLJlvc"
+  },
+  "Noctis": {
+    "shortname": "Noctis",
+    "name": "Noctis Lucis Caelum",
+    "flavortext": "",
+    "recommended": "Recommended Players: #CherryBerryMango #PhiDX",
+    "traits": "",
+    "overview": "",
+    "guide": "https://youtu.be/eeBp5hl9ZNA"
+  },
+  "Paul Phoenix": {
+    "shortname": "Paul",
+    "name": "Paul Phoenix",
+    "flavortext": "",
+    "recommended": "Recommended Players: #Knee #Justice #Luffy19",
+    "traits": "",
+    "overview": "",
+    "guide": "https://youtu.be/IS-FLTSZVeQ"
+  },
+  "Sergei Dragunov": {
+    "shortname": "Dragunov",
+    "name": "Sergei Dragunov",
+    "flavortext": "",
+    "recommended": "Recommended Players: #JDCR",
+    "traits": "",
+    "overview": "",
+    "guide": "https://youtu.be/13hg-izH3wA"
+  },
+  "Shaheen": {
+    "shortname": "Shaheen",
+    "name": "Shaheen",
+    "flavortext": "",
+    "recommended": "Recommended Players: #AK",
+    "traits": "",
+    "overview": "",
+    "guide": "https://youtu.be/kIigZCkWC3U"
+  },
+  "Steve Fox": {
+    "shortname": "Steve",
+    "name": "Steve Fox",
+    "flavortext": "",
+    "recommended": "Recommended Players: #Knee #Heera Malik",
+    "traits": "",
+    "overview": "",
+    "guide": "https://youtu.be/diAc6qBI5DQ"
+  },
+  "Ling Xiaoyu": {
+    "shortname": "Xiaoyu",
+    "name": "Ling Xiaoyu",
+    "flavortext": "",
+    "recommended": "Recommended Players: #Wecka #Cuddle Core",
+    "traits": "",
+    "overview": "",
+    "guide": "https://youtu.be/D1PQLAvVQlY"
+  },
+  "Yoshimitsu": {
+    "shortname": "Yoshimitsu",
+    "name": "Yoshimitsu",
+    "flavortext": "",
+    "recommended": "Recommended Players: #Eyemusician",
+    "traits": "",
+    "overview": "",
+    "guide": "https://youtu.be/rIVeR76mQxo"
+  },
+  "Zafina": {
+    "shortname": "Zafina",
+    "name": "Zafina",
+    "flavortext": "",
+    "recommended": "Recommended Players: #Chanel #Shadow20z #Arslan Ash",
+    "traits": "",
+    "overview": "",
+    "guide": "https://youtu.be/IduLCS9eA0c"
   }
 }
