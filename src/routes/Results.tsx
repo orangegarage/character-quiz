@@ -27,7 +27,7 @@ function Results() {
           <div className="flex justify-center">
             <img
               className="top3Images flex justify-center"
-              src={characterList[i].image}
+              src={characterList[i].photo}
               alt={characterList[i].name}
             />
           </div>

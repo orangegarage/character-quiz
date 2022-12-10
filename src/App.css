@@ -12,12 +12,10 @@ body {
 
 .App-logo {
   height: auto;
-  width: 5em;
+  width: 15em;
   display: flex;
   justify-content: center;
   pointer-events: none;
-  margin-top: 2em;
-  margin-bottom: 2em;
 }
 
 .App-header {

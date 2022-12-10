@@ -45,27 +45,36 @@ export function SelectedCharacter(index: number) {
               </button>
             </div>
 
-            <div className="p-6 space-y-6 h-96 overflow-y-auto">
+            <div className="p-6 space-y-3 h-96 overflow-y-auto">
               <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400 whitespace-pre-line">
                 {t(sortedCharacters[index].name + '.flavortext')}
+              </p>
+              <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                {t(sortedCharacters[index].name + '.recommended')}
               </p>
               <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400 ">
                 {t(sortedCharacters[index].name + '.traits')}
               </p>
             </div>
             <div className="flex items-center p-6 space-x-2 rounded-b border-t border-gray-200 dark:border-gray-600">
-              <button
+              <a
+                href={t(sortedCharacters[index].name + '.overview')}
+                target="_blank"
+                rel="noreferrer"
                 type="button"
                 className="text-white bg-blue-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 {t('modal.overview')}
-              </button>
-              <button
+              </a>
+              <a
+                href={t(sortedCharacters[index].name + '.guide')}
+                target="_blank"
+                rel="noreferrer"
                 type="button"
                 className="text-white bg-blue-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm font-medium px-5 py-2.5"
               >
                 {t('modal.build')}
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -95,9 +104,9 @@ function AllCharacters() {
         className="mt-6 mx-6 text-[#61dafb]"
       >
         <div className="flex justify-center">
-          <img src={character.image} alt={character.name} />
+          <img src={character.photo} alt={character.name} />
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center font-semibold">
           {t(character.name + '.shortname')}
         </div>
       </li>
