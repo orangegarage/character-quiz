@@ -1,4 +1,4 @@
-Lost Ark Character Quiz:
+Tekken Character Quiz:
 Special Thanks to:
 
 ### `npm start`
