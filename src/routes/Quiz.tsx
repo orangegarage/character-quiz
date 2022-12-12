@@ -41,7 +41,7 @@ function Quiz() {
         (characterOnlyTraits + 1) *
         (10 * (characterOnlyTraits + characterPreferredTraits) +
           5 * characterPrioritizedTraits);
-      console.log(characters[i].name + ': ' + characters[i].score);
+      // console.log(characters[i].name + ': ' + characters[i].score);
     }
     scoredCharacters = characters;
   }
@@ -78,24 +78,38 @@ function Quiz() {
       answerElement.parentElement?.classList.remove('bg-[#055e96]');
       answerElement.parentElement?.classList.add('bg-[#e4bb40]');
     }
+    console.log('preferences: ' + preferencesArray);
   }
   let answers: Array<string> = questions[currentQuestion].answers;
-  let listAnswers = answers.map((answer) => (
-    <label htmlFor={answer} key={answer}>
-      <li className="listAnswers text-center p-2 bg-[#055e96] border-[#055e96] rounded-lg hover:bg-[#BBA14F] transition-colors duration-300 mb-2">
-        <input
-          type="radio"
-          className="radioAnswer"
-          name="radioAnswer"
-          id={answer}
-          value={answer}
-          hidden
-          onChange={() => choseAnswer(answers, answer)}
-        />
-        {t('answers.' + answer)}
-      </li>
-    </label>
-  ));
+  function listAnswers() {
+    let answerMap = answers.map((answer) => {
+      let classNames =
+        'listAnswers text-center p-2 bg-[#055e96] border-[#055e96] rounded-lg hover:bg-[#BBA14F] transition-colors duration-300 mb-2';
+      //for each answers in list, if it exists in preferencesarray change class before render
+      if (preferencesArray.includes(answer)) {
+        classNames =
+          'listAnswers text-center p-2 bg-[#e4bb40] border-[#055e96] rounded-lg hover:bg-[#BBA14F] transition-colors duration-300 mb-2';
+      }
+      return (
+        <label htmlFor={answer} key={answer}>
+          <li className={classNames}>
+            <input
+              type="radio"
+              className="radioAnswer"
+              name="radioAnswer"
+              id={answer}
+              value={answer}
+              hidden
+              onChange={() => choseAnswer(answers, answer)}
+            />
+            {t('answers.' + answer)}
+          </li>
+        </label>
+      );
+    });
+    console.log('answers: ' + answers);
+    return answerMap;
+  }
 
   return (
     <>
@@ -135,7 +149,7 @@ function Quiz() {
           </div>
           <div className="answerDiv w-full text-2xl flex justify-center text-white ">
             {/* may need to take justify-center out for this one for legibility in start and end of questions */}
-            <ul className="w-full">{listAnswers}</ul>
+            <ul className="w-full">{listAnswers()}</ul>
           </div>
           <div
             className="navButtonDiv text-whitelg:mx-10 md:mx-10 mr-3 my-10"

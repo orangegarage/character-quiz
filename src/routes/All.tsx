@@ -89,7 +89,7 @@ function AllCharacters() {
   function characterClick(characterName: string) {
     for (let i: number = 0; i < characters.length; i++) {
       if (characters[i].name === characterName) {
-        console.log('clicked: ' + characterName);
+        //console.log('clicked: ' + characterName);
         setIndex(i);
         return index;
       }
