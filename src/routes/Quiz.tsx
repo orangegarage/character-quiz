@@ -41,7 +41,6 @@ function Quiz() {
         (characterOnlyTraits + 1) *
         (10 * (characterOnlyTraits + characterPreferredTraits) +
           5 * characterPrioritizedTraits);
-      // console.log(characters[i].name + ': ' + characters[i].score);
     }
     scoredCharacters = characters;
   }
@@ -78,7 +77,7 @@ function Quiz() {
       answerElement.parentElement?.classList.remove('bg-[#055e96]');
       answerElement.parentElement?.classList.add('bg-[#e4bb40]');
     }
-    console.log('preferences: ' + preferencesArray);
+    //console.log('preferences: ' + preferencesArray);
   }
   let answers: Array<string> = questions[currentQuestion].answers;
   function listAnswers() {
@@ -107,7 +106,6 @@ function Quiz() {
         </label>
       );
     });
-    console.log('answers: ' + answers);
     return answerMap;
   }
 
