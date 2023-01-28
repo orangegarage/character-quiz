@@ -56,6 +56,8 @@ function Quiz() {
   function previousQuestion(): number {
     if (currentQuestion > 0) {
       setCurrentQuestion(currentQuestion - 1);
+    } else if (currentQuestion === 0) {
+      setCurrentQuestion(quizLength - 1);
     }
     return currentQuestion;
   }
