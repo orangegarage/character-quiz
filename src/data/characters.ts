@@ -1027,6 +1027,7 @@ export let characters = [
       'defensiveoki',
       'setups-unimportant',
       'stance-light',
+      'evasion-low',
       'movetier-midhigh',
       'movetier-high',
       'tier-mid',
