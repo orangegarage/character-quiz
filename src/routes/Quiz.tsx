@@ -85,11 +85,11 @@ function Quiz() {
   function listAnswers() {
     let answerMap = answers.map((answer) => {
       let classNames =
-        'listAnswers text-center p-2 bg-[#055e96] border-[#055e96] rounded-lg hover:bg-[#BBA14F] transition-colors duration-300 mb-2';
+        'listAnswers text-center p-2 bg-[#055e96] border-[#055e96] rounded-lg hover:bg-[#BBA14F] text-omega-white transition-colors duration-300 mb-2';
       //for each answers in list, if it exists in preferencesarray change class before render
       if (preferencesArray.includes(answer)) {
         classNames =
-          'listAnswers text-center p-2 bg-[#e4bb40] border-[#055e96] rounded-lg hover:bg-[#BBA14F] transition-colors duration-300 mb-2';
+          'listAnswers text-center p-2 bg-[#e4bb40] border-[#055e96] rounded-lg hover:bg-[#BBA14F] text-omega-white transition-colors duration-300 mb-2';
       }
       return (
         <label htmlFor={answer} key={answer}>
@@ -114,7 +114,7 @@ function Quiz() {
   return (
     <>
       <Nav />
-      <div className="quizDiv whitespace-pre-line">
+      <div className="quizDiv whitespace-pre-line flex justify-center">
         <div className="carouselDiv text-white ">
           <p className="my-10 flex justify-center">
             {currentQuestion + 1} out of {questions.length}
@@ -124,15 +124,22 @@ function Quiz() {
               {t('questions.' + questions[currentQuestion].question)}
             </p>
           </div>
+          <div className="answerDiv w-full md:text-2xl text-base md:mx-5">
+            <ul className="w-full">{listAnswers()}</ul>
+          </div>
         </div>
-        <div className="quizNavDiv lg:w-1/2 w-full mx-auto flex items-center justify-center">
+        
+      </div> {/* quizdiv */}
+
+      <div className = "navDiv">
+        <div className="buttondiv flex lg:w-1/2 w-full mx-auto items-center justify-center">
           <div
-            className="navButtonDiv text-white lg:mx-10 md:mx-10 mr-3 my-10"
+            className="navButtonDiv text-omega-white hover:bg-[#BBA14F] transition-colors duration-300 lg:mx-10 md:mx-10 mr-3 my-10"
             onClick={previousQuestion}
           >
             <button>
               <svg
-                className="lg:w-20 lg:h-20 md:w-10 md:h-10 w-5 h-5 text-white"
+                className="lg:w-20 lg:h-20 md:w-10 md:h-10 w-5 h-5"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -145,14 +152,11 @@ function Quiz() {
                   d="M15 19l-7-7 7-7"
                 ></path>
               </svg>
+               back
             </button>
           </div>
-          <div className="answerDiv w-full text-2xl flex justify-center text-white ">
-            {/* may need to take justify-center out for this one for legibility in start and end of questions */}
-            <ul className="w-full">{listAnswers()}</ul>
-          </div>
           <div
-            className="navButtonDiv text-whitelg:mx-10 md:mx-10 mr-3 my-10"
+            className="navButtonDiv text-omega-white hover:bg-[#BBA14F] transition-colors duration-300 lg:mx-10 md:mx-10 mr-3 my-10"
             onClick={nextQuestion}
           >
             <button>
@@ -170,10 +174,12 @@ function Quiz() {
                   d="M9 5l7 7-7 7"
                 ></path>
               </svg>
+              next 
             </button>
           </div>
-        </div>
+        </div> {/* quiznavdiv */}
       </div>
+
     </>
   );
 }

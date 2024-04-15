@@ -29,9 +29,9 @@ export function Nav() {
 function Tab(props: { path: Paths; routeName: string }) {
   let location = useLocation();
   let classNames =
-    'block lg:inline-block lg:mr-7 mr-2 font-bold px-3 py-2 rounded-md hover:text-white hover:bg-[#055e96] transition-colors duration-500';
+    'block lg:inline-block lg:mr-7 mr-2 font-bold px-3 py-2 rounded-md hover:text-omega-white hover:bg-[#055e96] transition-colors duration-500';
   if (location.pathname === props.path) {
-    classNames += ' bg-[#055e96] text-white';
+    classNames += ' bg-[#055e96] text-omega-white';
   }
   return (
     <NavLink to={props.path} className={classNames}>
